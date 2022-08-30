@@ -1,0 +1,6 @@
+/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build/CMakeFiles/rebuild_cache.dir
+/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build/CMakeFiles/useHello.dir
+/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build/CMakeFiles/edit_cache.dir
+/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build/CMakeFiles/hello_shared.dir
+/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build/CMakeFiles/hello.dir
+/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build/CMakeFiles/helloSLAM.dir

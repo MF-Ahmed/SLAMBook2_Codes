@@ -1,0 +1,3 @@
+/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2_copy_practice/ch4/example/build/CMakeFiles/trajectoryError.dir
+/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2_copy_practice/ch4/example/build/CMakeFiles/edit_cache.dir
+/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2_copy_practice/ch4/example/build/CMakeFiles/rebuild_cache.dir
