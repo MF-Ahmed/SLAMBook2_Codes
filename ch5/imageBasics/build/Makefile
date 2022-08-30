@@ -129,6 +129,19 @@ imageBasics/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/build
 .PHONY : imageBasics/fast
 
+#=============================================================================
+# Target rules for targets named undistortImage
+
+# Build rule for target.
+undistortImage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 undistortImage
+.PHONY : undistortImage
+
+# fast build rule for target.
+undistortImage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/build
+.PHONY : undistortImage/fast
+
 imageBasics.o: imageBasics.cpp.o
 .PHONY : imageBasics.o
 
@@ -153,6 +166,30 @@ imageBasics.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/imageBasics.cpp.s
 .PHONY : imageBasics.cpp.s
 
+undistortImage.o: undistortImage.cpp.o
+.PHONY : undistortImage.o
+
+# target to build an object file
+undistortImage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.cpp.o
+.PHONY : undistortImage.cpp.o
+
+undistortImage.i: undistortImage.cpp.i
+.PHONY : undistortImage.i
+
+# target to preprocess a source file
+undistortImage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.cpp.i
+.PHONY : undistortImage.cpp.i
+
+undistortImage.s: undistortImage.cpp.s
+.PHONY : undistortImage.s
+
+# target to generate assembly for a file
+undistortImage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.cpp.s
+.PHONY : undistortImage.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... imageBasics"
+	@echo "... undistortImage"
 	@echo "... imageBasics.o"
 	@echo "... imageBasics.i"
 	@echo "... imageBasics.s"
+	@echo "... undistortImage.o"
+	@echo "... undistortImage.i"
+	@echo "... undistortImage.s"
 .PHONY : help
 
 
