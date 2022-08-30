@@ -3,7 +3,7 @@ project(useSophus)
 
 # 为使用 sophus，需要使用find_package命令找到它
 find_package(Sophus REQUIRED)
-include_directories( ${Sophus_INCLUDE_DIRS} ) # sohpus is header only
+include_directories( ${Sophus_INCLUDE_DIRS} ) # sohpus is header onlyinclude_directories( ${Sophus_INCLUDE_DIRS} ) # sohpus is header only
 
 # Eigen
 include_directories("/usr/include/eigen3")
