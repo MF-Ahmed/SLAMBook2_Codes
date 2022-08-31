@@ -221,23 +221,8 @@ OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 //The directory containing a CMake configuration file for Pangolin.
 Pangolin_DIR:PATH=/usr/local/lib/cmake/Pangolin
 
-//Value Computed by CMake
-Project_BINARY_DIR:STATIC=/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/build
-
-//Value Computed by CMake
-Project_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd
-
 //The directory containing a CMake configuration file for Sophus.
 Sophus_DIR:PATH=/usr/local/share/sophus/cmake
-
-//Set to ON if you are using Ubuntu 20.04
-USE_UBUNTU_20:BOOL=ON
-
-//The directory containing a CMake configuration file for fmt.
-fmt_DIR:PATH=/usr/local/lib/cmake/fmt
 
 //Value Computed by CMake
 joinMap_BINARY_DIR:STATIC=/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/build
