@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
   chrono::steady_clock::time_point t1 = chrono::steady_clock::now();
   for (int iter = 0; iter < iterations; iter++) {
 
-    Matrix3d ​​H = Matrix3d::Zero(); // Hessian = J^T W^{-1} J in Gauss-Newton
+    Matrix3d H = Matrix3d::Zero(); // Hessian = J^T W^{-1} J in Gauss-Newton
     Vector3d b = Vector3d::Zero(); // bias
     cost = 0;
 
