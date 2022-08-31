@@ -233,6 +233,12 @@ Project_SOURCE_DIR:STATIC=/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd
 //The directory containing a CMake configuration file for Sophus.
 Sophus_DIR:PATH=/usr/local/share/sophus/cmake
 
+//Set to ON if you are using Ubuntu 20.04
+USE_UBUNTU_20:BOOL=ON
+
+//The directory containing a CMake configuration file for fmt.
+fmt_DIR:PATH=/usr/local/lib/cmake/fmt
+
 //Value Computed by CMake
 joinMap_BINARY_DIR:STATIC=/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/build
 

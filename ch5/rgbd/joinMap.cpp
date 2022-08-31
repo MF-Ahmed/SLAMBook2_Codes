@@ -18,16 +18,17 @@ int main(int argc, char **argv) {
     vector<cv::Mat> colorImgs, depthImgs; // color map and depth map
     TrajectoryType poses; // camera poses
 
-    ifstream fin("./pose.txt");
+    ifstream fin("/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/pose.txt");
     if (!fin) {
         cerr << "Please run this program in the directory with pose.txt" << endl;
         return 1;
     }
 
     for (int i = 0; i < 5; i++) {
-        //boost::format fmt("./%s/%d.%s"); //image file format
-        //colorImgs.push_back(cv::imread((fmt % "color" % (i + 1) % "png").str()));
-        //depthImgs.push_back(cv::imread((fmt % "depth" % (i + 1) % "pgm").str(), -1)); // use -1 to read the original image
+        boost::format fmt("/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/%s/%d.%s"); //image file format
+
+        colorImgs.push_back(cv::imread((fmt % "color" % (i + 1) % "png").str()));
+        depthImgs.push_back(cv::imread((fmt % "depth" % (i + 1) % "pgm").str(), -1)); // use -1 to read the original image
 
         double data[7] = {0};
         for (auto &d:data)

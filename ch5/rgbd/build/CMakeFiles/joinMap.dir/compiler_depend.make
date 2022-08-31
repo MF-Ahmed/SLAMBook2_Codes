@@ -874,13 +874,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/include/c++/9/bits/random.tcc \
   /usr/include/c++/9/numeric \
   /usr/include/c++/9/bits/stl_numeric.h \
-  /usr/local/include/fmt/format.h \
-  /usr/local/include/fmt/core.h \
-  /usr/include/c++/9/experimental/string_view \
-  /usr/include/c++/9/experimental/bits/lfts_config.h \
-  /usr/include/c++/9/experimental/bits/string_view.tcc \
-  /usr/local/include/fmt/ostream.h \
-  /usr/local/include/fmt/format.h \
   /usr/local/include/sophus/so2.hpp \
   /usr/include/eigen3/Eigen/LU \
   /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
@@ -889,8 +882,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 
 /usr/local/include/sophus/so2.hpp:
-
-/usr/local/include/fmt/core.h:
 
 /usr/include/c++/9/bits/random.tcc:
 
@@ -951,8 +942,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/local/include/pangolin/utils/file_extension.h:
 
 /usr/local/include/pangolin/image/copy.h:
-
-/usr/include/c++/9/experimental/bits/lfts_config.h:
 
 /usr/local/include/pangolin/image/image.h:
 
@@ -1139,8 +1128,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
 
 /usr/local/include/pangolin/handler/handler.h:
-
-/usr/include/c++/9/experimental/string_view:
 
 /usr/local/include/pangolin/var/varinit.h:
 
@@ -1694,8 +1681,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/local/include/fmt/ostream.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp:
@@ -1717,8 +1702,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
 
 /usr/include/wchar.h:
-
-/usr/include/c++/9/experimental/bits/string_view.tcc:
 
 /usr/include/boost/predef/make.h:
 
@@ -1849,8 +1832,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h:
 
 /usr/include/c++/9/bits/locale_conv.h:
-
-/usr/local/include/fmt/format.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
