@@ -25,9 +25,9 @@ int main(int argc, char **argv) {
     }
 
     for (int i = 0; i < 5; i++) {
-        boost::format fmt("./%s/%d.%s"); //image file format
-        colorImgs.push_back(cv::imread((fmt % "color" % (i + 1) % "png").str()));
-        depthImgs.push_back(cv::imread((fmt % "depth" % (i + 1) % "pgm").str(), -1)); // use -1 to read the original image
+        //boost::format fmt("./%s/%d.%s"); //image file format
+        //colorImgs.push_back(cv::imread((fmt % "color" % (i + 1) % "png").str()));
+        //depthImgs.push_back(cv::imread((fmt % "depth" % (i + 1) % "pgm").str(), -1)); // use -1 to read the original image
 
         double data[7] = {0};
         for (auto &d:data)

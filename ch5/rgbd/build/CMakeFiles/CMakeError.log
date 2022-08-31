@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_bbf4d/fast && /usr/bin/make  -f CMakeFiles/cmTC_bbf4d.dir/build.make CMakeFiles/cmTC_bbf4d.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_607c4/fast && /usr/bin/make  -f CMakeFiles/cmTC_607c4.dir/build.make CMakeFiles/cmTC_607c4.dir/build
 make[1]: Entering directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bbf4d.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_bbf4d.dir/src.c.o -c /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_bbf4d
-/home/uzi/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbf4d.dir/link.txt --verbose=1
-/usr/bin/cc -rdynamic CMakeFiles/cmTC_bbf4d.dir/src.c.o -o cmTC_bbf4d 
-/usr/bin/ld: CMakeFiles/cmTC_bbf4d.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_607c4.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_607c4.dir/src.c.o -c /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_607c4
+/home/uzi/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_607c4.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_607c4.dir/src.c.o -o cmTC_607c4 
+/usr/bin/ld: CMakeFiles/cmTC_607c4.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_bbf4d.dir/build.make:99: cmTC_bbf4d] Error 1
+make[1]: *** [CMakeFiles/cmTC_607c4.dir/build.make:99: cmTC_607c4] Error 1
 make[1]: Leaving directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_bbf4d/fast] Error 2
+make: *** [Makefile:127: cmTC_607c4/fast] Error 2
 
 
 Source file was:
@@ -43,18 +43,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_45774/fast && /usr/bin/make  -f CMakeFiles/cmTC_45774.dir/build.make CMakeFiles/cmTC_45774.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_56dde/fast && /usr/bin/make  -f CMakeFiles/cmTC_56dde.dir/build.make CMakeFiles/cmTC_56dde.dir/build
 make[1]: Entering directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_45774.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_45774.dir/CheckFunctionExists.c.o -c /home/uzi/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.24/Modules/CheckFunctionExists.c
-Linking C executable cmTC_45774
-/home/uzi/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45774.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_45774.dir/CheckFunctionExists.c.o -o cmTC_45774  -lpthreads 
+Building C object CMakeFiles/cmTC_56dde.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_56dde.dir/CheckFunctionExists.c.o -c /home/uzi/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.24/Modules/CheckFunctionExists.c
+Linking C executable cmTC_56dde
+/home/uzi/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56dde.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_56dde.dir/CheckFunctionExists.c.o -o cmTC_56dde  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_45774.dir/build.make:99: cmTC_45774] Error 1
+make[1]: *** [CMakeFiles/cmTC_56dde.dir/build.make:99: cmTC_56dde] Error 1
 make[1]: Leaving directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_45774/fast] Error 2
+make: *** [Makefile:127: cmTC_56dde/fast] Error 2
 
 
 

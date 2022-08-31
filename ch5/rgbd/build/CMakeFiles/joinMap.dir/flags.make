@@ -6,5 +6,5 @@ CXX_DEFINES = -DHAVE_EIGEN -DHAVE_GLEW -DHAVE_PYTHON -DPANGO_DEFAULT_WIN_URI=\"w
 
 CXX_INCLUDES = -isystem /usr/local/include/opencv4 -isystem /usr/include/eigen3
 
-CXX_FLAGS = -std=c++17
+CXX_FLAGS = -std=c++14
 

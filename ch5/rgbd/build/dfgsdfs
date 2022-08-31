@@ -1,0 +1,15 @@
+[38;5;244m~[0m/[38;5;244mData[0m/[38;5;244mAllGit[0m/[38;5;244mSLAMBook2_Codes[0m/[38;5;244mch5[0m/[38;5;244mrgbd[0m/[38;5;244mbuild ~[0m/[38;5;244mData[0m/[38;5;244mAllGit[0m/[38;5;244mSLAMBook2_Codes[0m/[38;5;244mch5[0m/[38;5;244mrgbd ~[0m/[38;5;244mData[0m/[38;5;244mAllGit[0m/[38;5;244mSLAMBook2_Codes[0m/[38;5;244mch5 ~[0m/[38;5;244mData[0m/[38;5;244mAllGit[0m/[38;5;244mSLAMBook2_Codes ~[0m/[38;5;244mData[0m/[38;5;244mAllGit[0m/[38;5;244mSLAMBook2_Codes[0m/[38;5;244mch5[0m/[38;5;244mstereo ~[0m/[38;5;244mData[0m/[38;5;244mAllGit[0m/[38;5;244mSLAMBook2_Codes[0m/[38;5;244mch5[0m/[38;5;244mstereo[0m/[38;5;244mbuild ~[0m/[38;5;244mData[0m/[38;5;244mAllGit[0m
+CMakeCache.txt  [0m[01;34mCMakeFiles[0m/  cmake_install.cmake  Makefile
+## [32mmain[m...[31morigin/main[m
+ [31mM[m ../CMakeLists.txt
+ [31mM[m CMakeCache.txt
+ [31mM[m CMakeFiles/CMakeError.log
+ [31mM[m CMakeFiles/CMakeOutput.log
+ [31mM[m CMakeFiles/joinMap.dir/compiler_depend.internal
+ [31mM[m CMakeFiles/joinMap.dir/compiler_depend.make
+ [31mM[m CMakeFiles/joinMap.dir/flags.make
+ [31mD[m CMakeFiles/joinMap.dir/joinMap.cpp.o
+ [31mM[m CMakeFiles/joinMap.dir/joinMap.cpp.o.d
+ [31mM[m CMakeFiles/joinMap.dir/link.txt
+ [31mD[m joinMap
+ [31mM[m ../joinMap.cpp

@@ -13,7 +13,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
-  /usr/include/c++/9/pstl/pstl_config.h \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
@@ -120,10 +119,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/string_view \
-  /usr/include/c++/9/limits \
-  /usr/include/c++/9/bits/functional_hash.h \
-  /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -156,6 +151,7 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/locale_classes.tcc \
   /usr/include/c++/9/system_error \
@@ -186,6 +182,7 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/local/include/opencv4/opencv2/core.hpp \
   /usr/local/include/opencv4/opencv2/core/cvdef.h \
   /usr/local/include/opencv4/opencv2/core/version.hpp \
+  /usr/include/c++/9/limits \
   /usr/local/include/opencv4/opencv2/core/hal/interface.h \
   /usr/include/c++/9/cstddef \
   /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
@@ -215,28 +212,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/include/c++/9/bits/stl_tempbuf.h \
   /usr/include/c++/9/bits/stl_construct.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/9/functional \
-  /usr/include/c++/9/tuple \
-  /usr/include/c++/9/bits/uses_allocator.h \
-  /usr/include/c++/9/bits/invoke.h \
-  /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/std_function.h \
-  /usr/include/c++/9/unordered_map \
-  /usr/include/c++/9/ext/aligned_buffer.h \
-  /usr/include/c++/9/bits/hashtable.h \
-  /usr/include/c++/9/bits/hashtable_policy.h \
-  /usr/include/c++/9/bits/node_handle.h \
-  /usr/include/c++/9/optional \
-  /usr/include/c++/9/bits/enable_special_members.h \
-  /usr/include/c++/9/bits/unordered_map.h \
-  /usr/include/c++/9/bits/erase_if.h \
-  /usr/include/c++/9/vector \
-  /usr/include/c++/9/bits/stl_uninitialized.h \
-  /usr/include/c++/9/bits/stl_vector.h \
-  /usr/include/c++/9/bits/stl_bvector.h \
-  /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/pstl/execution_defs.h \
   /usr/local/include/opencv4/opencv2/core/cvstd.hpp \
   /usr/include/c++/9/cstring \
   /usr/include/string.h \
@@ -252,32 +227,24 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/c++/9/bits/specfun.h \
-  /usr/include/c++/9/tr1/gamma.tcc \
-  /usr/include/c++/9/tr1/special_function_util.h \
-  /usr/include/c++/9/tr1/bessel_function.tcc \
-  /usr/include/c++/9/tr1/beta_function.tcc \
-  /usr/include/c++/9/tr1/ell_integral.tcc \
-  /usr/include/c++/9/tr1/exp_integral.tcc \
-  /usr/include/c++/9/tr1/hypergeometric.tcc \
-  /usr/include/c++/9/tr1/legendre_function.tcc \
-  /usr/include/c++/9/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/9/tr1/poly_hermite.tcc \
-  /usr/include/c++/9/tr1/poly_laguerre.tcc \
-  /usr/include/c++/9/tr1/riemann_zeta.tcc \
   /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
   /usr/include/c++/9/memory \
+  /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/ext/concurrence.h \
+  /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/unique_ptr.h \
+  /usr/include/c++/9/tuple \
+  /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/shared_ptr.h \
   /usr/include/c++/9/bits/shared_ptr_base.h \
   /usr/include/c++/9/bits/allocated_ptr.h \
+  /usr/include/c++/9/bits/refwrap.h \
+  /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/bits/shared_ptr_atomic.h \
   /usr/include/c++/9/bits/atomic_base.h \
   /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/backward/auto_ptr.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
   /usr/local/include/opencv4/opencv2/core/neon_utils.hpp \
   /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp \
   /usr/include/assert.h \
@@ -289,6 +256,10 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/local/include/opencv4/opencv2/core/types.hpp \
   /usr/include/c++/9/cfloat \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h \
+  /usr/include/c++/9/vector \
+  /usr/include/c++/9/bits/stl_vector.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
+  /usr/include/c++/9/bits/vector.tcc \
   /usr/local/include/opencv4/opencv2/core/mat.hpp \
   /usr/local/include/opencv4/opencv2/core/bufferpool.hpp \
   /usr/local/include/opencv4/opencv2/core/mat.inl.hpp \
@@ -299,6 +270,8 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/include/c++/9/sstream \
   /usr/include/c++/9/bits/sstream.tcc \
   /usr/local/include/opencv4/opencv2/core/utility.hpp \
+  /usr/include/c++/9/functional \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/mutex \
   /usr/include/c++/9/chrono \
   /usr/include/c++/9/ratio \
@@ -324,6 +297,7 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/include/c++/9/bits/stl_tree.h \
   /usr/include/c++/9/bits/stl_map.h \
   /usr/include/c++/9/bits/stl_multimap.h \
+  /usr/include/c++/9/bits/erase_if.h \
   /usr/local/include/opencv4/opencv2/dnn/layer.hpp \
   /usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp \
   /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
@@ -346,6 +320,10 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h \
   /usr/local/include/opencv4/opencv2/flann/dist.h \
   /usr/local/include/opencv4/opencv2/flann/heap.h \
+  /usr/include/c++/9/unordered_map \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
+  /usr/include/c++/9/bits/unordered_map.h \
   /usr/local/include/opencv4/opencv2/flann/allocator.h \
   /usr/local/include/opencv4/opencv2/flann/random.h \
   /usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h \
@@ -896,9 +874,11 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
   /usr/include/c++/9/bits/random.tcc \
   /usr/include/c++/9/numeric \
   /usr/include/c++/9/bits/stl_numeric.h \
-  /usr/include/c++/9/pstl/glue_numeric_defs.h \
   /usr/local/include/fmt/format.h \
   /usr/local/include/fmt/core.h \
+  /usr/include/c++/9/experimental/string_view \
+  /usr/include/c++/9/experimental/bits/lfts_config.h \
+  /usr/include/c++/9/experimental/bits/string_view.tcc \
   /usr/local/include/fmt/ostream.h \
   /usr/local/include/fmt/format.h \
   /usr/local/include/sophus/so2.hpp \
@@ -911,6 +891,8 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/local/include/sophus/so2.hpp:
 
 /usr/local/include/fmt/core.h:
+
+/usr/include/c++/9/bits/random.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/opt_random.h:
 
@@ -942,6 +924,8 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/local/include/pangolin/video/stream_info.h:
 
+/usr/include/c++/9/iterator:
+
 /usr/local/include/pangolin/video/video_interface.h:
 
 /usr/local/include/pangolin/video/video_exception.h:
@@ -967,6 +951,8 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/local/include/pangolin/utils/file_extension.h:
 
 /usr/local/include/pangolin/image/copy.h:
+
+/usr/include/c++/9/experimental/bits/lfts_config.h:
 
 /usr/local/include/pangolin/image/image.h:
 
@@ -1154,6 +1140,8 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/local/include/pangolin/handler/handler.h:
 
+/usr/include/c++/9/experimental/string_view:
+
 /usr/local/include/pangolin/var/varinit.h:
 
 /usr/include/c++/9/cassert:
@@ -1182,6 +1170,8 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/local/include/pangolin/display/view.h:
 
+/usr/local/include/pangolin/display/display.hpp:
+
 /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
 
 /usr/local/include/pangolin/windowing/handler_enums.h:
@@ -1196,6 +1186,10 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/local/include/pangolin/utils/params.h:
 
+/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
+
+/usr/local/include/pangolin/gl/glpangoglu.h:
+
 /usr/include/GL/gl.h:
 
 /usr/include/GL/glew.h:
@@ -1208,6 +1202,10 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/local/include/pangolin/pangolin.h:
 
+/usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
+
+/usr/include/boost/format/free_funcs.hpp:
+
 /usr/include/boost/format/feed_args.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
@@ -1219,6 +1217,10 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/boost/smart_ptr/detail/operator_bool.hpp:
 
 /usr/include/boost/predef/version_number.h:
+
+/usr/include/c++/9/any:
+
+/usr/include/boost/predef/os/windows.h:
 
 /usr/include/boost/predef/detail/test.h:
 
@@ -1236,6 +1238,8 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp:
 
+/usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp:
+
 /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
@@ -1247,8 +1251,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/boost/config/no_tr1/memory.hpp:
 
 /usr/include/boost/preprocessor/logical/bitand.hpp:
-
-/usr/include/c++/9/pstl/glue_numeric_defs.h:
 
 /usr/include/boost/preprocessor/list/reverse.hpp:
 
@@ -1262,57 +1264,55 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/boost/preprocessor/detail/check.hpp:
 
+/usr/include/boost/preprocessor/detail/is_binary.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/NumTraits.h:
 
 /usr/include/boost/preprocessor/control/expr_iif.hpp:
 
 /usr/include/boost/preprocessor/list/fold_left.hpp:
 
-/usr/include/boost/preprocessor/control/while.hpp:
+/usr/include/c++/9/bits/stl_vector.h:
 
-/usr/include/boost/preprocessor/repetition/repeat_from_to.hpp:
+/usr/include/c++/9/limits:
 
-/usr/include/boost/format/alt_sstream.hpp:
+/usr/local/include/pangolin/gl/gltext.h:
 
-/usr/include/boost/optional/detail/optional_swap.hpp:
+/usr/include/c++/9/cfloat:
 
-/usr/include/boost/optional/detail/optional_relops.hpp:
+/usr/local/include/opencv4/opencv2/opencv.hpp:
 
-/usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+/usr/local/include/opencv4/opencv2/core/saturate.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/Product.h:
+/usr/include/c++/9/vector:
 
-/usr/include/boost/optional/detail/optional_reference_spec.hpp:
+/usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
 
-/usr/include/boost/optional/detail/optional_trivially_copyable_base.hpp:
+/usr/local/include/pangolin/plot/plotter.h:
 
-/usr/include/boost/optional/detail/optional_factory_support.hpp:
+/usr/include/assert.h:
 
-/usr/include/boost/preprocessor/list/adt.hpp:
+/usr/include/math.h:
 
-/usr/include/boost/optional/optional_fwd.hpp:
+/usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:
 
-/usr/include/boost/utility/detail/result_of_iterate.hpp:
+/usr/include/c++/9/bits/stl_heap.h:
 
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
+/usr/include/c++/9/backward/auto_ptr.h:
 
-/usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
+/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
 
-/usr/include/eigen3/Eigen/src/misc/Image.h:
+/usr/include/c++/9/bits/unique_ptr.h:
 
-/usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp:
+/usr/include/boost/type_traits/decay.hpp:
 
-/usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
+/usr/include/c++/9/memory:
 
-/usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:
+/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
 
-/usr/include/boost/type_traits/type_identity.hpp:
+/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
 
-/usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp:
-
-/usr/include/c++/9/bits/specfun.h:
-
-/usr/include/asm-generic/errno-base.h:
+/usr/include/boost/preprocessor/facilities/overload.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -1329,48 +1329,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/c++/9/cstring:
-
-/usr/include/c++/9/pstl/execution_defs.h:
-
-/usr/include/c++/9/vector:
-
-/usr/include/math.h:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:
-
-/usr/local/include/pangolin/plot/plotter.h:
-
-/usr/include/assert.h:
-
-/usr/include/c++/9/bits/erase_if.h:
-
-/usr/include/c++/9/locale:
-
-/usr/include/c++/9/bits/unordered_map.h:
-
-/usr/include/boost/type_traits/is_reference.hpp:
-
-/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
-
-/usr/local/include/pangolin/gl/glpangoglu.h:
-
-/usr/include/c++/9/bits/node_handle.h:
-
-/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
-
-/usr/include/c++/9/bits/unique_ptr.h:
-
-/usr/include/boost/type_traits/decay.hpp:
-
-/usr/local/include/pangolin/gl/glvbo.h:
-
-/usr/include/c++/9/functional:
-
-/usr/local/include/pangolin/display/display.hpp:
-
-/usr/include/c++/9/pstl/glue_algorithm_defs.h:
-
-/usr/include/boost/config/detail/suffix.hpp:
 
 /usr/local/include/pangolin/gl/glpixformat.h:
 
@@ -1404,11 +1362,27 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/boost/move/traits.hpp:
 
+/usr/include/stdlib.h:
+
+/usr/include/boost/preprocessor/repetition/enum_params.hpp:
+
 /usr/include/c++/9/bits/stl_relops.h:
 
-/usr/include/boost/preprocessor/arithmetic/add.hpp:
+/usr/include/eigen3/Eigen/src/Core/MapBase.h:
 
-/usr/include/c++/9/utility:
+/usr/include/c++/9/bits/stl_raw_storage_iter.h:
+
+/usr/include/boost/config/stdlib/libstdcpp3.hpp:
+
+/usr/include/c++/9/bits/atomic_base.h:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
+
+/usr/include/c++/9/bits/shared_ptr_base.h:
+
+/usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/c++/9/array:
 
@@ -1442,8 +1416,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/usr/include/c++/9/tr1/riemann_zeta.tcc:
-
 /usr/include/boost/preprocessor/punctuation/comma_if.hpp:
 
 /usr/local/include/opencv4/opencv2/core/version.hpp:
@@ -1451,6 +1423,10 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/local/include/pangolin/platform.h:
 
 /usr/local/include/opencv4/opencv2/core/cvdef.h:
+
+/usr/local/include/opencv4/opencv2/core/matx.hpp:
+
+/usr/include/boost/format/alt_sstream.hpp:
 
 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
 
@@ -1460,8 +1436,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/c++/9/bits/ostream.tcc:
 
-/usr/include/c++/9/bits/hashtable.h:
-
 /usr/local/include/opencv4/opencv2/flann/timer.h:
 
 /usr/include/boost/smart_ptr/detail/sp_counted_base.hpp:
@@ -1469,6 +1443,10 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/local/include/opencv4/opencv2/highgui.hpp:
 
 /usr/include/c++/9/ext/aligned_buffer.h:
+
+/usr/local/include/opencv4/opencv2/core/vsx_utils.hpp:
+
+/usr/include/c++/9/bits/fstream.tcc:
 
 /usr/local/include/opencv4/opencv2/flann/params.h:
 
@@ -1488,13 +1466,13 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/c++/9/optional:
-
 /usr/include/c++/9/bits/locale_classes.tcc:
 
 /usr/include/boost/type_traits/is_default_constructible.hpp:
 
 /usr/include/c++/9/bits/stl_algobase.h:
+
+/usr/include/asm-generic/errno-base.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -1518,13 +1496,15 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/c++/9/bits/stl_tempbuf.h:
 
-/usr/include/boost/preprocessor/slot/detail/shared.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/include/boost/type_traits/type_identity.hpp:
 
 /usr/include/boost/optional/bad_optional_access.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/local/include/opencv4/opencv2/flann/flann_base.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/9/include/mm_malloc.h:
 
 /usr/include/boost/format/internals.hpp:
 
@@ -1550,7 +1530,23 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/c++/9/bits/exception.h:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+/usr/include/c++/9/debug/debug.h:
+
+/usr/include/c++/9/bits/stl_iterator_base_funcs.h:
+
+/usr/local/include/opencv4/opencv2/flann/kdtree_index.h:
+
+/usr/include/c++/9/bits/stl_pair.h:
+
+/usr/include/c++/9/bits/stl_function.h:
+
+/usr/include/strings.h:
+
+/usr/local/include/opencv4/opencv2/core/types.hpp:
+
+/usr/include/c++/9/ext/type_traits.h:
+
+/usr/include/boost/format/detail/workarounds_stlport.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
 
@@ -1558,51 +1554,7 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/boost/type_traits/type_with_alignment.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/c++/9/iosfwd:
-
-/usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/c++/9/cmath:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/9/debug/debug.h:
-
-/usr/include/c++/9/bits/stl_iterator_base_funcs.h:
-
-/usr/local/include/opencv4/opencv2/flann/kdtree_index.h:
-
-/usr/include/c++/9/tr1/bessel_function.tcc:
-
-/usr/include/c++/9/bits/stl_pair.h:
-
-/usr/include/c++/9/bits/stl_function.h:
-
-/usr/include/c++/9/bits/vector.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
-
-/usr/include/boost/format/free_funcs.hpp:
-
-/usr/include/c++/9/tr1/ell_integral.tcc:
-
-/usr/include/strings.h:
-
 /usr/include/c++/9/cctype:
-
-/usr/local/include/opencv4/opencv2/opencv.hpp:
-
-/usr/include/c++/9/ext/type_traits.h:
-
-/usr/include/boost/format/detail/workarounds_stlport.hpp:
-
-/usr/local/include/opencv4/opencv2/core/types.hpp:
 
 /usr/include/linux/limits.h:
 
@@ -1622,6 +1574,10 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/local/include/opencv4/opencv2/core/mat.inl.hpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/9/include/float.h:
+
+/usr/include/c++/9/bits/allocated_ptr.h:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h:
@@ -1634,11 +1590,7 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/c++/9/streambuf:
 
-/usr/include/c++/9/tr1/special_function_util.h:
-
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/c++/9/bits/cxxabi_init_exception.h:
 
@@ -1664,61 +1616,23 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
-
-/usr/include/boost/limits.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
 /usr/include/boost/type_traits/is_rvalue_reference.hpp:
 
 /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
-
-/usr/include/boost/core/ignore_unused.hpp:
-
-/usr/local/include/pangolin/utils/signal_slot.h:
-
-/usr/include/boost/move/utility.hpp:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/boost/config/user.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/local/include/opencv4/opencv2/core/cuda_types.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h:
-
-/usr/include/sched.h:
-
-/usr/include/boost/smart_ptr/bad_weak_ptr.hpp:
-
-/usr/include/boost/optional.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
-
-/usr/include/c++/9/bits/shared_ptr_base.h:
-
-/usr/include/c++/9/bits/stl_bvector.h:
-
-/usr/include/boost/config/detail/select_stdlib_config.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
+
+/usr/include/c++/9/bits/uniform_int_dist.h:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h:
+
+/usr/include/boost/type_traits/is_assignable.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/c++/9/bits/char_traits.h:
 
@@ -1728,11 +1642,27 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/c++/9/bits/stringfwd.h:
 
-/usr/include/boost/preprocessor/detail/is_binary.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/c++/9/tr1/gamma.tcc:
+/usr/include/boost/config/detail/select_stdlib_config.hpp:
+
+/usr/include/c++/9/bits/stl_bvector.h:
+
+/usr/include/c++/9/iosfwd:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/9/iostream:
+
+/usr/include/c++/9/utility:
+
+/usr/include/boost/preprocessor/arithmetic/add.hpp:
 
 /usr/include/c++/9/bits/hash_bytes.h:
 
@@ -1743,6 +1673,12 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/boost/core/enable_if.hpp:
 
 /usr/include/boost/move/detail/meta_utils.hpp:
+
+/usr/include/c++/9/cstdlib:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/boost/preprocessor/slot/detail/shared.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h:
 
@@ -1757,10 +1693,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/c++/9/limits:
-
-/usr/include/c++/9/bits/stl_vector.h:
 
 /usr/local/include/fmt/ostream.h:
 
@@ -1780,19 +1712,13 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/boost/checked_delete.hpp:
 
-/usr/include/c++/9/bits/enable_special_members.h:
-
 /usr/local/include/opencv4/opencv2/video/tracking.hpp:
-
-/usr/include/c++/9/any:
-
-/usr/include/boost/predef/os/windows.h:
-
-/usr/include/c++/9/string_view:
 
 /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
 
 /usr/include/wchar.h:
+
+/usr/include/c++/9/experimental/bits/string_view.tcc:
 
 /usr/include/boost/predef/make.h:
 
@@ -1823,6 +1749,10 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/local/include/sigslot/signal.hpp:
 
 /usr/include/boost/none_t.hpp:
+
+/usr/include/c++/9/bits/predefined_ops.h:
+
+/usr/include/boost/type_traits/integral_constant.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/emmintrin.h:
 
@@ -1870,15 +1800,31 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
+/usr/local/include/opencv4/opencv2/core/traits.hpp:
+
+/usr/include/boost/type_traits/is_base_of.hpp:
+
+/usr/include/c++/9/cmath:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
 /usr/include/c++/9/system_error:
 
 /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
 
-/usr/include/c++/9/bits/predefined_ops.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/usr/include/boost/type_traits/integral_constant.hpp:
+/usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h:
 
-/usr/include/c++/9/unordered_map:
+/usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/boost/config/user.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/local/include/opencv4/opencv2/core/cuda_types.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -1912,19 +1858,21 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
 
-/usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp:
+/usr/include/c++/9/exception:
 
-/usr/include/c++/9/bits/string_view.tcc:
-
-/usr/include/c++/9/cerrno:
-
-/usr/include/c++/9/bits/parse_numbers.h:
+/usr/local/include/opencv4/opencv2/core/neon_utils.hpp:
 
 /usr/include/c++/9/initializer_list:
 
 /usr/include/boost/type_traits/is_lvalue_reference.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+/usr/include/eigen3/Eigen/src/Core/Product.h:
+
+/usr/include/boost/optional/detail/optional_reference_spec.hpp:
 
 /usr/include/c++/9/ext/atomicity.h:
 
@@ -1943,6 +1891,8 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/c++/9/bits/shared_ptr_atomic.h:
 
 /usr/local/include/opencv4/opencv2/flann.hpp:
+
+/usr/include/c++/9/ext/concurrence.h:
 
 /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
 
@@ -1986,22 +1936,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/c++/9/bits/stl_tree.h:
 
-/usr/include/endian.h:
-
-/usr/local/include/opencv4/opencv2/flann/matrix.h:
-
-/usr/include/boost/type_traits/conditional.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/eigen3/Eigen/Geometry:
-
-/usr/include/boost/preprocessor/array/size.hpp:
-
-/usr/local/include/opencv4/opencv2/flann/lsh_index.h:
-
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/c++/9/bits/stl_multiset.h:
@@ -2024,9 +1958,9 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Half.h:
 
-/usr/include/boost/optional/detail/optional_config.hpp:
-
 /usr/include/boost/type_traits/is_pod.hpp:
+
+/usr/include/boost/optional/detail/optional_config.hpp:
 
 /usr/local/include/opencv4/opencv2/ml.hpp:
 
@@ -2036,15 +1970,9 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/usr/include/c++/9/iterator:
-
-/usr/include/c++/9/pstl/glue_memory_defs.h:
-
 /usr/include/c++/9/chrono:
 
 /usr/include/boost/format/detail/unset_macros.hpp:
-
-/usr/include/c++/9/pstl/pstl_config.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -2074,6 +2002,14 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:
 
+/usr/include/c++/9/bits/basic_ios.tcc:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/9/bits/atomic_lockfree_defines.h:
+
+/usr/local/include/opencv4/opencv2/core/mat.hpp:
+
 /usr/include/c++/9/bits/cxxabi_forced.h:
 
 /usr/include/boost/type_traits/remove_const.hpp:
@@ -2082,33 +2018,17 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/c++/9/ext/alloc_traits.h:
 
-/usr/include/c++/9/tr1/beta_function.tcc:
-
-/usr/include/c++/9/bits/stl_heap.h:
-
-/usr/include/c++/9/bits/fstream.tcc:
-
-/usr/local/include/opencv4/opencv2/core/vsx_utils.hpp:
-
 /usr/local/include/pangolin/gl/glfont.h:
 
 /usr/include/eigen3/Eigen/src/Core/EigenBase.h:
 
 /usr/include/c++/9/bits/alloc_traits.h:
 
-/usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
-
-/usr/include/c++/9/bits/uniform_int_dist.h:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h:
-
-/usr/include/boost/type_traits/is_assignable.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
 /usr/include/boost/format/alt_sstream_impl.hpp:
 
 /usr/include/c++/9/ext/string_conversions.h:
+
+/usr/local/include/opencv4/opencv2/core/check.hpp:
 
 /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/joinMap.cpp:
 
@@ -2118,107 +2038,39 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/boost/preprocessor/array/elem.hpp:
 
-/usr/include/c++/9/cstdlib:
-
-/usr/include/c++/9/bits/basic_ios.tcc:
-
-/usr/include/stdc-predef.h:
-
-/usr/local/include/opencv4/opencv2/core/mat.hpp:
-
-/usr/include/c++/9/bits/atomic_lockfree_defines.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/boost/preprocessor/repetition/enum_params.hpp:
-
-/usr/include/c++/9/tr1/exp_integral.tcc:
-
-/usr/include/c++/9/fstream:
-
-/usr/local/include/opencv4/opencv2/flann/allocator.h:
-
-/usr/include/c++/9/bits/random.tcc:
-
-/usr/include/c++/9/tr1/hypergeometric.tcc:
-
-/usr/include/inttypes.h:
-
-/usr/include/c++/9/set:
-
-/usr/include/c++/9/tr1/legendre_function.tcc:
-
-/usr/include/c++/9/tr1/modified_bessel_func.tcc:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp:
-
-/usr/local/include/opencv4/opencv2/flann/saving.h:
-
-/usr/include/boost/preprocessor/array/data.hpp:
-
-/usr/include/c++/9/tr1/poly_hermite.tcc:
-
-/usr/include/c++/9/bits/stl_deque.h:
-
-/usr/include/c++/9/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/9/memory:
-
-/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
-
-/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
-
-/usr/include/boost/preprocessor/facilities/overload.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/MapBase.h:
-
-/usr/include/c++/9/bits/stl_raw_storage_iter.h:
-
-/usr/include/boost/config/stdlib/libstdcpp3.hpp:
-
-/usr/include/c++/9/ext/concurrence.h:
-
-/usr/include/c++/9/bits/atomic_base.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/9/include/mm_malloc.h:
-
-/usr/local/include/opencv4/opencv2/flann/flann_base.hpp:
-
-/usr/include/c++/9/backward/auto_ptr.h:
-
-/usr/include/c++/9/exception:
-
-/usr/local/include/opencv4/opencv2/core/neon_utils.hpp:
-
-/usr/local/include/opencv4/opencv2/core/check.hpp:
-
-/usr/include/boost/type_traits/is_base_of.hpp:
-
-/usr/local/include/opencv4/opencv2/core/traits.hpp:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
-
-/usr/local/include/opencv4/opencv2/core/matx.hpp:
-
-/usr/local/include/opencv4/opencv2/core/saturate.hpp:
-
-/usr/include/string.h:
-
-/usr/include/c++/9/tuple:
-
-/usr/local/include/opencv4/opencv2/core/fast_math.hpp:
-
 /usr/include/c++/9/stdexcept:
 
 /usr/include/boost/move/core.hpp:
 
-/usr/local/include/pangolin/gl/gltext.h:
+/usr/include/string.h:
 
-/usr/include/c++/9/cfloat:
+/usr/local/include/opencv4/opencv2/core/fast_math.hpp:
 
-/usr/include/c++/9/bits/allocated_ptr.h:
+/usr/include/c++/9/tuple:
 
-/usr/lib/gcc/x86_64-linux-gnu/9/include/float.h:
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/eigen3/Eigen/Geometry:
+
+/usr/include/boost/preprocessor/array/size.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/lsh_index.h:
+
+/usr/include/endian.h:
+
+/usr/local/include/opencv4/opencv2/flann/matrix.h:
+
+/usr/include/boost/type_traits/conditional.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/c++/9/bits/vector.tcc:
+
+/usr/include/boost/config/detail/suffix.hpp:
 
 /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:
 
@@ -2242,9 +2094,25 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/local/include/opencv4/opencv2/core/utility.hpp:
 
+/usr/local/include/pangolin/gl/glvbo.h:
+
+/usr/include/c++/9/functional:
+
+/usr/include/boost/smart_ptr/bad_weak_ptr.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/boost/optional.hpp:
+
 /usr/include/c++/9/mutex:
 
 /usr/include/c++/9/ctime:
+
+/usr/include/boost/optional/detail/optional_swap.hpp:
+
+/usr/include/c++/9/cerrno:
+
+/usr/include/c++/9/bits/parse_numbers.h:
 
 /usr/include/boost/type_traits/is_pointer.hpp:
 
@@ -2255,6 +2123,10 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/local/include/opencv4/opencv2/stitching/warpers.hpp:
 
 /usr/local/include/opencv4/opencv2/core/ovx.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
+
+/usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
 
 /usr/include/boost/preprocessor/logical/bool.hpp:
 
@@ -2302,6 +2174,10 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp:
 
+/usr/include/c++/9/bits/erase_if.h:
+
+/usr/include/c++/9/locale:
+
 /usr/include/eigen3/Eigen/src/Core/Select.h:
 
 /usr/local/include/opencv4/opencv2/dnn/layer.hpp:
@@ -2322,11 +2198,21 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/local/include/opencv4/opencv2/flann/all_indices.h:
 
+/usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/saving.h:
+
+/usr/include/boost/preprocessor/array/data.hpp:
+
 /usr/local/include/opencv4/opencv2/flann/result_set.h:
 
 /usr/include/boost/preprocessor/arithmetic/sub.hpp:
 
 /usr/include/boost/preprocessor/variadic/elem.hpp:
+
+/usr/include/inttypes.h:
+
+/usr/include/c++/9/set:
 
 /usr/include/c++/9/bits/stl_set.h:
 
@@ -2337,6 +2223,28 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/local/include/opencv4/opencv2/flann/dist.h:
+
+/usr/include/boost/utility/detail/result_of_iterate.hpp:
+
+/usr/include/c++/9/unordered_map:
+
+/usr/include/c++/9/bits/hashtable.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
+
+/usr/include/boost/core/ignore_unused.hpp:
+
+/usr/local/include/pangolin/utils/signal_slot.h:
+
+/usr/include/boost/move/utility.hpp:
+
+/usr/include/boost/optional/detail/optional_relops.hpp:
+
+/usr/include/c++/9/bits/unordered_map.h:
+
+/usr/include/c++/9/fstream:
+
+/usr/local/include/opencv4/opencv2/flann/allocator.h:
 
 /usr/local/include/opencv4/opencv2/flann/random.h:
 
@@ -2369,6 +2277,12 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/boost/smart_ptr/detail/shared_count.hpp:
 
 /usr/include/boost/move/detail/workaround.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/boost/limits.hpp:
 
 /usr/include/boost/type_traits/is_complete.hpp:
 
@@ -2412,15 +2326,11 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp:
 
-/usr/include/boost/preprocessor/facilities/intercept.hpp:
-
-/usr/include/c++/9/bits/stl_iterator.h:
-
-/usr/local/include/opencv4/opencv2/objdetect.hpp:
-
 /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
 
 /usr/local/include/opencv4/opencv2/objdetect/face.hpp:
+
+/usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp:
 
 /usr/include/eigen3/Eigen/LU:
 
@@ -2442,14 +2352,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp:
 
-/usr/local/include/pangolin/gl/glchar.h:
-
-/usr/include/boost/optional/detail/optional_aligned_storage.hpp:
-
-/usr/include/c++/9/bits/shared_ptr.h:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
-
 /usr/local/include/opencv4/opencv2/stitching/detail/util.hpp:
 
 /usr/include/c++/9/list:
@@ -2465,6 +2367,8 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/local/include/opencv4/opencv2/flann/logger.h:
 
 /usr/include/c++/9/deque:
+
+/usr/include/c++/9/bits/stl_deque.h:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp:
 
@@ -2507,10 +2411,6 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/c++/9/bits/stl_construct.h:
 
 /usr/include/boost/preprocessor/control/iif.hpp:
-
-/usr/include/boost/utility/base_from_member.hpp:
-
-/usr/include/boost/config/compiler/gcc.hpp:
 
 /usr/include/boost/exception/exception.hpp:
 
@@ -2578,9 +2478,15 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/boost/type_traits/declval.hpp:
 
+/usr/include/boost/type_traits/is_reference.hpp:
+
 /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp:
 
 /usr/include/boost/type_traits/is_arithmetic.hpp:
+
+/usr/include/boost/config/compiler/gcc.hpp:
+
+/usr/include/boost/utility/base_from_member.hpp:
 
 /usr/include/c++/9/bits/stl_stack.h:
 
@@ -2652,6 +2558,12 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 
 /usr/include/boost/preprocessor/arithmetic/inc.hpp:
 
+/usr/include/c++/9/bits/stl_iterator.h:
+
+/usr/local/include/opencv4/opencv2/objdetect.hpp:
+
+/usr/include/boost/preprocessor/facilities/intercept.hpp:
+
 /usr/include/boost/format/internals_fwd.hpp:
 
 /usr/include/boost/preprocessor/tuple/elem.hpp:
@@ -2679,3 +2591,31 @@ CMakeFiles/joinMap.dir/joinMap.cpp.o: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/
 /usr/include/boost/preprocessor/detail/auto_rec.hpp:
 
 /usr/include/boost/preprocessor/tuple/eat.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
+
+/usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:
+
+/usr/include/eigen3/Eigen/src/misc/Image.h:
+
+/usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp:
+
+/usr/include/boost/preprocessor/list/adt.hpp:
+
+/usr/include/boost/optional/optional_fwd.hpp:
+
+/usr/include/boost/optional/detail/optional_factory_support.hpp:
+
+/usr/local/include/pangolin/gl/glchar.h:
+
+/usr/include/c++/9/bits/shared_ptr.h:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
+
+/usr/include/boost/optional/detail/optional_aligned_storage.hpp:
+
+/usr/include/boost/optional/detail/optional_trivially_copyable_base.hpp:
+
+/usr/include/boost/preprocessor/repetition/repeat_from_to.hpp:
+
+/usr/include/boost/preprocessor/control/while.hpp:
