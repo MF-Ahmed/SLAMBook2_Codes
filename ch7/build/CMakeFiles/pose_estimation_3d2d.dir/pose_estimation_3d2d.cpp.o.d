@@ -282,20 +282,20 @@ CMakeFiles/pose_estimation_3d2d.dir/pose_estimation_3d2d.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/IO.h \
  /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
  /usr/include/eigen3/Eigen/src/Core/DenseBase.h \
- /usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h \
+ /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h \
  /usr/include/eigen3/Eigen/src/Core/MatrixBase.h \
- /usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h \
- /usr/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h \
- /usr/include/eigen3/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h \
- /usr/include/eigen3/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
  /usr/include/eigen3/Eigen/src/Core/EigenBase.h \
  /usr/include/eigen3/Eigen/src/Core/Product.h \
  /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
  /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
  /usr/include/eigen3/Eigen/src/Core/Assign.h \
  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
- /usr/include/eigen3/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h \
- /usr/include/eigen3/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
  /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
  /usr/include/eigen3/Eigen/src/Core/DenseStorage.h \
  /usr/include/eigen3/Eigen/src/Core/NestByValue.h \
@@ -481,6 +481,7 @@ CMakeFiles/pose_estimation_3d2d.dir/pose_estimation_3d2d.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/9/bits/locale_facets_nonio.tcc \
  /usr/include/c++/9/bits/locale_conv.h \
+ /usr/include/c++/9/bits/quoted_string.h \
  /usr/local/include/g2o/stuff/sparse_helper.h \
  /usr/local/include/g2o/stuff/g2o_stuff_api.h \
  /usr/local/include/g2o/core/matrix_operations.h \
@@ -512,11 +513,7 @@ CMakeFiles/pose_estimation_3d2d.dir/pose_estimation_3d2d.cpp.o: \
  /usr/include/c++/9/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/opt_random.h \
  /usr/include/c++/9/bits/random.tcc /usr/include/c++/9/numeric \
- /usr/include/c++/9/bits/stl_numeric.h /usr/local/include/fmt/format.h \
- /usr/local/include/fmt/core.h /usr/include/c++/9/iterator \
- /usr/include/c++/9/bits/stream_iterator.h \
- /usr/local/include/fmt/ostream.h /usr/local/include/fmt/format.h \
- /usr/local/include/sophus/so2.hpp \
+ /usr/include/c++/9/bits/stl_numeric.h /usr/local/include/sophus/so2.hpp \
  /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
  /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
  /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h

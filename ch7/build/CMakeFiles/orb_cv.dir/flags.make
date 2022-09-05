@@ -6,5 +6,5 @@ CXX_DEFINES = -DENABLE_SSE
 
 CXX_INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
 
-CXX_FLAGS = -std=c++11 -O2  -msse4 -O3 -DNDEBUG
+CXX_FLAGS = -std=c++14 -O2  -msse4 -O3 -DNDEBUG
 
