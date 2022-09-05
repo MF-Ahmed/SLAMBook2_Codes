@@ -7,6 +7,9 @@
 using namespace std;
 using namespace cv;
 
+
+
+
 int main(int argc, char **argv) {
   if (argc != 3) {
     cout << "usage: feature_extraction img1 img2" << endl;

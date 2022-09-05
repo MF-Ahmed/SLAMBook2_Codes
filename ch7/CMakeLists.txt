@@ -17,8 +17,6 @@ include_directories(
         "/usr/include/eigen3/"
 )
 
-
-
 add_executable(orb_cv orb_cv.cpp)
 target_link_libraries(orb_cv ${OpenCV_LIBS})
 
