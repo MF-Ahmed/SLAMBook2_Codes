@@ -19,27 +19,32 @@
 using namespace std;
 using namespace cv;
 
-void find_feature_matches(
-  const Mat &img_1, const Mat &img_2,
-  std::vector<KeyPoint> &keypoints_1,
-  std::vector<KeyPoint> &keypoints_2,
-  std::vector<DMatch> &matches);
+/*
 
-// 像素坐标转相机归一化坐标
+Practice solving ICP using SVD and Non-linear optimization
+
+*/
+
+void find_feature_matches(
+   const Mat &img_1, const Mat &img_2,
+   std::vector<KeyPoint> &keypoints_1,
+   std::vector<KeyPoint> &keypoints_2,
+   std::vector<DMatch> &matches);
+
+// Pixel coordinates to camera normalized coordinates
 Point2d pixel2cam(const Point2d &p, const Mat &K);
 
 void pose_estimation_3d3d(
-  const vector<Point3f> &pts1,
-  const vector<Point3f> &pts2,
-  Mat &R, Mat &t
+   const vector<Point3f> &pts1,
+   const vector<Point3f> &pts2,
+   Mat &R, Mat &t
 );
 
 void bundleAdjustment(
-  const vector<Point3f> &points_3d,
-  const vector<Point3f> &points_2d,
-  Mat &R, Mat &t
+   const vector<Point3f> &points_3d,
+   const vector<Point3f> &points_2d,
+   Mat &R, Mat &t
 );
-
 /// vertex and edges used in g2o ba
 class VertexPose : public g2o::BaseVertex<6, Sophus::SE3d> {
 public:
