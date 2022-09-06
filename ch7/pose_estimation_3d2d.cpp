@@ -23,7 +23,7 @@ void find_feature_matches(
   std::vector<KeyPoint> &keypoints_2,
   std::vector<DMatch> &matches);
 
-// 像素坐标转相机归一化坐标
+// Pixel coordinates to camera normalized coordinates
 Point2d pixel2cam(const Point2d &p, const Mat &K);
 
 // BA by g2o
@@ -44,13 +44,12 @@ void bundleAdjustmentGaussNewton(
   const Mat &K,
   Sophus::SE3d &pose
 );
-
 int main(int argc, char **argv) {
   if (argc != 5) {
     cout << "usage: pose_estimation_3d2d img1 img2 depth1 depth2" << endl;
     return 1;
   }
-  //-- 读取图像
+  //-- read the image
   Mat img_1 = imread(argv[1], IMREAD_COLOR);
   Mat img_2 = imread(argv[2], IMREAD_COLOR);
   assert(img_1.data && img_2.data && "Can not load images!");
@@ -58,16 +57,16 @@ int main(int argc, char **argv) {
   vector<KeyPoint> keypoints_1, keypoints_2;
   vector<DMatch> matches;
   find_feature_matches(img_1, img_2, keypoints_1, keypoints_2, matches);
-  cout << "一共找到了" << matches.size() << "组匹配点" << endl;
+  cout << "Total found" << matches.size() << "Group matching points" << endl;
 
-  // 建立3D点
-  Mat d1 = imread(argv[3], IMREAD_UNCHANGED);       // 深度图为16位无符号数，单通道图像
+  // create 3D point
+  Mat d1 = imread(argv[3], IMREAD_UNCHANGED); // The depth map is a 16-bit unsigned number, a single channel image
   Mat K = (Mat_<double>(3, 3) << 520.9, 0, 325.1, 0, 521.0, 249.7, 0, 0, 1);
   vector<Point3f> pts_3d;
   vector<Point2f> pts_2d;
   for (DMatch m:matches) {
     ushort d = d1.ptr<unsigned short>(int(keypoints_1[m.queryIdx].pt.y))[int(keypoints_1[m.queryIdx].pt.x)];
-    if (d == 0)   // bad depth
+    if (d == 0) // bad depth
       continue;
     float dd = d / 5000.0;
     Point2d p1 = pixel2cam(keypoints_1[m.queryIdx].pt, K);
@@ -79,9 +78,9 @@ int main(int argc, char **argv) {
 
   chrono::steady_clock::time_point t1 = chrono::steady_clock::now();
   Mat r, t;
-  solvePnP(pts_3d, pts_2d, K, Mat(), r, t, false); // 调用OpenCV 的 PnP 求解，可选择EPNP，DLS等方法
+  solvePnP(pts_3d, pts_2d, K, Mat(), r, t, false); // Call OpenCV's PnP solution, you can choose EPNP, DLS and other methods
   Mat R;
-  cv::Rodrigues(r, R); // r为旋转向量形式，用Rodrigues公式转换为矩阵
+  cv::Rodrigues(r, R); // r is in the form of a rotation vector, converted to a matrix using the Rodrigues formula
   chrono::steady_clock::time_point t2 = chrono::steady_clock::now();
   chrono::duration<double> time_used = chrono::duration_cast<chrono::duration<double>>(t2 - t1);
   cout << "solve pnp in opencv cost time: " << time_used.count() << " seconds." << endl;
@@ -118,7 +117,7 @@ void find_feature_matches(const Mat &img_1, const Mat &img_2,
                           std::vector<KeyPoint> &keypoints_1,
                           std::vector<KeyPoint> &keypoints_2,
                           std::vector<DMatch> &matches) {
-  //-- 初始化
+  //-- initialize
   Mat descriptors_1, descriptors_2;
   // used in OpenCV3
   Ptr<FeatureDetector> detector = ORB::create();
@@ -127,23 +126,23 @@ void find_feature_matches(const Mat &img_1, const Mat &img_2,
   // Ptr<FeatureDetector> detector = FeatureDetector::create ( "ORB" );
   // Ptr<DescriptorExtractor> descriptor = DescriptorExtractor::create ( "ORB" );
   Ptr<DescriptorMatcher> matcher = DescriptorMatcher::create("BruteForce-Hamming");
-  //-- 第一步:检测 Oriented FAST 角点位置
+  //-- Step 1: Detect Oriented FAST corner positions
   detector->detect(img_1, keypoints_1);
   detector->detect(img_2, keypoints_2);
 
-  //-- 第二步:根据角点位置计算 BRIEF 描述子
+  //-- Step 2: Calculate the BRIEF descriptor based on the corner position
   descriptor->compute(img_1, keypoints_1, descriptors_1);
   descriptor->compute(img_2, keypoints_2, descriptors_2);
 
-  //-- 第三步:对两幅图像中的BRIEF描述子进行匹配，使用 Hamming 距离
+  //-- Step 3: Match the Brief descriptors in the two images, using the Hamming distance
   vector<DMatch> match;
   // BFMatcher matcher ( NORM_HAMMING );
   matcher->match(descriptors_1, descriptors_2, match);
 
-  //-- 第四步:匹配点对筛选
+  //-- Step 4: Match point pair filter
   double min_dist = 10000, max_dist = 0;
 
-  //找出所有匹配之间的最小距离和最大距离, 即是最相似的和最不相似的两组点之间的距离
+  //Find the minimum and maximum distances between all matches, that is, the distances between the most similar and least similar two sets of points
   for (int i = 0; i < descriptors_1.rows; i++) {
     double dist = match[i].distance;
     if (dist < min_dist) min_dist = dist;
@@ -153,7 +152,7 @@ void find_feature_matches(const Mat &img_1, const Mat &img_2,
   printf("-- Max dist : %f \n", max_dist);
   printf("-- Min dist : %f \n", min_dist);
 
-  //当描述子之间的距离大于两倍的最小距离时,即认为匹配有误.但有时候最小距离会非常小,设置一个经验值30作为下限.
+  //When the distance between descriptors is greater than twice the minimum distance, the matching is considered incorrect. But sometimes the minimum distance is very small, and an empirical value of 30 is set as the lower limit.
   for (int i = 0; i < descriptors_1.rows; i++) {
     if (match[i].distance <= max(2 * min_dist, 30.0)) {
       matches.push_back(match[i]);
@@ -307,18 +306,18 @@ private:
 void bundleAdjustmentG2O(
   const VecVector3d &points_3d,
   const VecVector2d &points_2d,
-  const Mat &K,
+  const Mat&K,
   Sophus::SE3d &pose) {
 
-  // 构建图优化，先设定g2o
-  typedef g2o::BlockSolver<g2o::BlockSolverTraits<6, 3>> BlockSolverType;  // pose is 6, landmark is 3
-  typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType> LinearSolverType; // 线性求解器类型
-  // 梯度下降方法，可以从GN, LM, DogLeg 中选
+  // Build graph optimization, first set g2o
+  typedef g2o::BlockSolver<g2o::BlockSolverTraits<6, 3>> BlockSolverType; // pose is 6, landmark is 3
+  typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType> LinearSolverType; // Linear solver type
+  // Gradient descent method, you can choose from GN, LM, DogLeg
   auto solver = new g2o::OptimizationAlgorithmGaussNewton(
     g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
-  g2o::SparseOptimizer optimizer;     // 图模型
-  optimizer.setAlgorithm(solver);   // 设置求解器
-  optimizer.setVerbose(true);       // 打开调试输出
+  g2o::SparseOptimizer optimizer; // graph model
+  optimizer.setAlgorithm(solver); // set the solver
+  optimizer.setVerbose(true); // turn on debug output
 
   // vertex
   VertexPose *vertex_pose = new VertexPose(); // camera vertex_pose
