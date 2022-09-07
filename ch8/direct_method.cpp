@@ -2,6 +2,7 @@
 #include <sophus/se3.hpp>
 #include <boost/format.hpp>
 #include <pangolin/pangolin.h>
+#include "gnuplot-iostream.h"
 
 using namespace std;
 
