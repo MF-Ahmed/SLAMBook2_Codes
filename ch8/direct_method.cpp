@@ -13,9 +13,9 @@ double fx = 718.856, fy = 718.856, cx = 607.1928, cy = 185.2157;
 // baseline
 double baseline = 0.573;
 // paths
-string left_file = "./left.png";
-string disparity_file = "./disparity.png";
-boost::format fmt_others("./%06d.png");    // other files
+string left_file = "/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/left.png";
+string disparity_file = "/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/disparity.png";
+boost::format fmt_others("/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/%06d.png");    // other files
 
 // useful typedefs
 typedef Eigen::Matrix<double, 6, 6> Matrix6d;
