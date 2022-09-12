@@ -138,7 +138,8 @@ int main(int argc, char **argv) {
         int x = rng.uniform(boarder, left_img.cols - boarder);  // don't pick pixels close to boarder
         int y = rng.uniform(boarder, left_img.rows - boarder);  // don't pick pixels close to boarder
         int disparity = disparity_img.at<uchar>(y, x);
-        double depth = fx * baseline / disparity; // you know this is disparity to depth
+        double depth = fx * baseline / disparity; // you know this is disparity to depth calculation formula fx = focal length, 
+                                                  // baseline = displacement between cameras
         depth_ref.push_back(depth);
         pixels_ref.push_back(Eigen::Vector2d(x, y));
     }

@@ -1,0 +1,98 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_52b77/fast && /usr/bin/make  -f CMakeFiles/cmTC_52b77.dir/build.make CMakeFiles/cmTC_52b77.dir/build
+make[1]: Entering directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52b77.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_52b77.dir/CheckFunctionExists.c.o -c /home/uzi/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.24/Modules/CheckFunctionExists.c
+Linking C executable cmTC_52b77
+/home/uzi/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52b77.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ -rdynamic CMakeFiles/cmTC_52b77.dir/CheckFunctionExists.c.o -o cmTC_52b77 
+/usr/bin/ld: CMakeFiles/cmTC_52b77.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_52b77.dir/build.make:99: cmTC_52b77] Error 1
+make[1]: Leaving directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_52b77/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4528a/fast && /usr/bin/make  -f CMakeFiles/cmTC_4528a.dir/build.make CMakeFiles/cmTC_4528a.dir/build
+make[1]: Entering directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4528a.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_4528a.dir/src.c.o -c /home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4528a
+/home/uzi/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4528a.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_4528a.dir/src.c.o -o cmTC_4528a 
+/usr/bin/ld: CMakeFiles/cmTC_4528a.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_4528a.dir/build.make:99: cmTC_4528a] Error 1
+make[1]: Leaving directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_4528a/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d8951/fast && /usr/bin/make  -f CMakeFiles/cmTC_d8951.dir/build.make CMakeFiles/cmTC_d8951.dir/build
+make[1]: Entering directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8951.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_d8951.dir/CheckFunctionExists.c.o -c /home/uzi/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.24/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d8951
+/home/uzi/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8951.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_d8951.dir/CheckFunctionExists.c.o -o cmTC_d8951  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d8951.dir/build.make:99: cmTC_d8951] Error 1
+make[1]: Leaving directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_d8951/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_26b3e/fast && /usr/bin/make  -f CMakeFiles/cmTC_26b3e.dir/build.make CMakeFiles/cmTC_26b3e.dir/build
+make[1]: Entering directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26b3e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_26b3e.dir/CheckFunctionExists.c.o -c /home/uzi/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.24/Modules/CheckFunctionExists.c
+Linking C executable cmTC_26b3e
+/home/uzi/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26b3e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_26b3e.dir/CheckFunctionExists.c.o -o cmTC_26b3e  /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -lpthread -lm -ldl 
+/usr/bin/ld: CMakeFiles/cmTC_26b3e.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_26b3e.dir/build.make:102: cmTC_26b3e] Error 1
+make[1]: Leaving directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch9/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_26b3e/fast] Error 2
+
+
+
