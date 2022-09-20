@@ -1,5 +1,0 @@
-/home/uzi/Data/AllGit/SLAMBook2_Codes/ch6/build/CMakeFiles/gaussNewton.dir
-/home/uzi/Data/AllGit/SLAMBook2_Codes/ch6/build/CMakeFiles/ceresCurveFitting.dir
-/home/uzi/Data/AllGit/SLAMBook2_Codes/ch6/build/CMakeFiles/g2oCurveFitting.dir
-/home/uzi/Data/AllGit/SLAMBook2_Codes/ch6/build/CMakeFiles/edit_cache.dir
-/home/uzi/Data/AllGit/SLAMBook2_Codes/ch6/build/CMakeFiles/rebuild_cache.dir

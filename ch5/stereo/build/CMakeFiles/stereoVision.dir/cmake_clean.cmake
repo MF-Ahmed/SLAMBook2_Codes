@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/stereoVision.dir/stereoVision.cpp.o"
-  "CMakeFiles/stereoVision.dir/stereoVision.cpp.o.d"
   "stereoVision"
   "stereoVision.pdb"
 )

@@ -6,7 +6,12 @@ using namespace std;
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-string image_path {"/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/imageBasics/ubuntu.png"};
+
+string basedir = "/home/user/All_Data/All_git/SLAMBook2_Codes/ch5/imageBasics/";
+
+
+
+string image_path {basedir+"ubuntu.png"};
 int main(int argc, char **argv) {
   // Read the image specified by argv[1]
   cv::Mat image;

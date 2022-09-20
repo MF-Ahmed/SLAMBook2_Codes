@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o"
-  "CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o.d"
   "trajectoryError"
   "trajectoryError.pdb"
 )

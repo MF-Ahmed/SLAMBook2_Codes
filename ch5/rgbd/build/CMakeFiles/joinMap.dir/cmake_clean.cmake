@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/joinMap.dir/joinMap.cpp.o"
-  "CMakeFiles/joinMap.dir/joinMap.cpp.o.d"
   "joinMap"
   "joinMap.pdb"
 )
