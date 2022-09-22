@@ -620,15 +620,6 @@ CMakeFiles/pose_graph_g2o_lie.dir/pose_graph_g2o_lie_algebra.cpp.o: /home/uzi/Da
   /usr/include/c++/9/bits/random.tcc \
   /usr/include/c++/9/numeric \
   /usr/include/c++/9/bits/stl_numeric.h \
-  /usr/local/include/fmt/format.h \
-  /usr/local/include/fmt/core.h \
-  /usr/include/c++/9/iterator \
-  /usr/include/c++/9/bits/stream_iterator.h \
-  /usr/include/c++/9/experimental/string_view \
-  /usr/include/c++/9/experimental/bits/lfts_config.h \
-  /usr/include/c++/9/experimental/bits/string_view.tcc \
-  /usr/local/include/fmt/ostream.h \
-  /usr/local/include/fmt/format.h \
   /usr/local/include/sophus/so2.hpp \
   /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
   /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
@@ -636,14 +627,6 @@ CMakeFiles/pose_graph_g2o_lie.dir/pose_graph_g2o_lie_algebra.cpp.o: /home/uzi/Da
 
 
 /usr/local/include/sophus/so2.hpp:
-
-/usr/include/c++/9/experimental/bits/lfts_config.h:
-
-/usr/include/c++/9/experimental/string_view:
-
-/usr/include/c++/9/iterator:
-
-/usr/local/include/fmt/core.h:
 
 /usr/include/c++/9/bits/stl_numeric.h:
 
@@ -1063,8 +1046,6 @@ CMakeFiles/pose_graph_g2o_lie.dir/pose_graph_g2o_lie_algebra.cpp.o: /home/uzi/Da
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/local/include/fmt/ostream.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/c++/9/clocale:
@@ -1232,8 +1213,6 @@ CMakeFiles/pose_graph_g2o_lie.dir/pose_graph_g2o_lie_algebra.cpp.o: /home/uzi/Da
 /usr/include/c++/9/bits/sstream.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/local/include/fmt/format.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
@@ -1448,8 +1427,6 @@ CMakeFiles/pose_graph_g2o_lie.dir/pose_graph_g2o_lie_algebra.cpp.o: /home/uzi/Da
 /usr/include/c++/9/bits/stl_set.h:
 
 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
-
-/usr/include/c++/9/experimental/bits/string_view.tcc:
 
 /usr/include/c++/9/bits/localefwd.h:
 
@@ -1794,8 +1771,6 @@ CMakeFiles/pose_graph_g2o_lie.dir/pose_graph_g2o_lie_algebra.cpp.o: /home/uzi/Da
 /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h:
 
 /usr/include/c++/9/bits/locale_facets_nonio.tcc:
-
-/usr/include/c++/9/bits/stream_iterator.h:
 
 /usr/include/c++/9/bits/hashtable_policy.h:
 
