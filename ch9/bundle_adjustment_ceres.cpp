@@ -24,8 +24,8 @@ int main(int argc, char **argv) {
 }
 
 void SolveBA(BALProblem &bal_problem) {
-    const int point_block_size = bal_problem.point_block_size();
-    const int camera_block_size = bal_problem.camera_block_size();
+    const int point_block_size = bal_problem.point_block_size();// 3
+    const int camera_block_size = bal_problem.camera_block_size();// 9 as we are not using quaternions
     double *points = bal_problem.mutable_points();
     double *cameras = bal_problem.mutable_cameras();
 
