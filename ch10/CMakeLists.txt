@@ -13,10 +13,6 @@ include_directories("/usr/include/eigen3")
 find_package(Sophus REQUIRED)
 include_directories(Sophus::Sophus)
 
-#add_executable(useSophus useSophus.cpp)
-#target_link_libraries(useSophus Sophus::Sophus)
-
-
 
 # g2o 
 find_package(G2O REQUIRED)
