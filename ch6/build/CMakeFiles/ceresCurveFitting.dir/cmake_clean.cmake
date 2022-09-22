@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ceresCurveFitting.dir/ceresCurveFitting.cpp.o"
-  "CMakeFiles/ceresCurveFitting.dir/ceresCurveFitting.cpp.o.d"
   "ceresCurveFitting"
   "ceresCurveFitting.pdb"
 )

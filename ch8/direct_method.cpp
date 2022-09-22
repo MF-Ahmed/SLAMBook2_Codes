@@ -2,7 +2,7 @@
 #include <sophus/se3.hpp>
 #include <boost/format.hpp>
 #include <pangolin/pangolin.h>
-#include "gnuplot-iostream.h"
+
 
 using namespace std;
 
@@ -13,9 +13,14 @@ double fx = 718.856, fy = 718.856, cx = 607.1928, cy = 185.2157;
 // baseline
 double baseline = 0.573;
 // paths
-string left_file = "/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/left.png";
-string disparity_file = "/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/disparity.png";
-boost::format fmt_others("/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/%06d.png");    // other files
+
+
+string basedir = "/home/user/All_Data/All_git/SLAMBook2_Codes/ch8/";
+
+
+string left_file = basedir+"left.png";
+string disparity_file = basedir+"disparity.png";
+boost::format fmt_others(basedir+"%06d.png");    // other files
 
 // useful typedefs
 typedef Eigen::Matrix<double, 6, 6> Matrix6d;

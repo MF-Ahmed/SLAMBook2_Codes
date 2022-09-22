@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pose_estimation_3d2d.dir/pose_estimation_3d2d.cpp.o"
-  "CMakeFiles/pose_estimation_3d2d.dir/pose_estimation_3d2d.cpp.o.d"
   "pose_estimation_3d2d"
   "pose_estimation_3d2d.pdb"
 )

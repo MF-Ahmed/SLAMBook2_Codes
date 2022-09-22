@@ -11,8 +11,10 @@
 using namespace std;
 using namespace cv;
 
-string file_1 = "/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/LK1.png";  // first image
-string file_2 = "/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/LK2.png";  // second image
+string basedir = "/home/user/All_Data/All_git/SLAMBook2_Codes/ch8/";
+
+string file_1 = basedir+"LK1.png";  // first image
+string file_2 = basedir+"LK2.png";  // second image
 
 /// Optical flow tracker and interface
 class OpticalFlowTracker {

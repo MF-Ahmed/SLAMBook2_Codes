@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/triangulation.dir/triangulation.cpp.o"
-  "CMakeFiles/triangulation.dir/triangulation.cpp.o.d"
   "triangulation"
   "triangulation.pdb"
 )

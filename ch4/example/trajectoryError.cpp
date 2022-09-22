@@ -10,8 +10,10 @@
 using namespace Sophus;
 using namespace std;
 
-string p1 = "/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2/ch4/example/groundtruth.txt";
-string p2 = "/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2/ch4/example/estimated.txt";
+string basedir = "/home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example";
+
+string p1 = basedir+"/groundtruth.txt";
+string p2 = basedir+"/estimated.txt";
 
 
 string groundtruth_file = p1;

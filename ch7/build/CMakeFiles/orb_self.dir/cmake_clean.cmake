@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/orb_self.dir/orb_self.cpp.o"
-  "CMakeFiles/orb_self.dir/orb_self.cpp.o.d"
   "orb_self"
   "orb_self.pdb"
 )

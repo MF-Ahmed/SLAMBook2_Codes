@@ -3,7 +3,9 @@
 
 using namespace std;
 
-string image_file = "/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/imageBasics/distorted.png"; // make sure the path is correct
+string basedir = "/home/user/All_Data/All_git/SLAMBook2_Codes/ch5/imageBasics/";
+
+string image_file = basedir+"distorted.png"; // make sure the path is correct
 
 int main(int argc, char **argv) {
 

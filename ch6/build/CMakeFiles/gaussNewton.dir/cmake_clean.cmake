@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gaussNewton.dir/gaussNewton.cpp.o"
-  "CMakeFiles/gaussNewton.dir/gaussNewton.cpp.o.d"
   "gaussNewton"
   "gaussNewton.pdb"
 )

@@ -10,22 +10,28 @@ using namespace std;
 typedef vector<Sophus::SE3d, Eigen::aligned_allocator<Sophus::SE3d>> TrajectoryType;
 typedef Eigen::Matrix<double, 6, 1> Vector6d;
 
+string basedir = "/home/user/All_Data/All_git/SLAMBook2_Codes/ch5/rgbd/";
+
 // Drawing in pangolin, already written, no need to adjust
 void showPointCloud(
     const vector<Vector6d, Eigen::aligned_allocator<Vector6d>> &pointcloud);
+
+
 
 int main(int argc, char **argv) {
     vector<cv::Mat> colorImgs, depthImgs; // color map and depth map
     TrajectoryType poses; // camera poses
 
-    ifstream fin("/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/pose.txt");
+
+
+    ifstream fin(basedir+"pose.txt");
     if (!fin) {
         cerr << "Please run this program in the directory with pose.txt" << endl;
         return 1;
     }
 
     for (int i = 0; i < 5; i++) {
-        boost::format fmt("/home/uzi/Data/AllGit/SLAMBook2_Codes/ch5/rgbd/%s/%d.%s"); //image file format
+        boost::format fmt(basedir+"%s/%d.%s"); //image file format
 
         colorImgs.push_back(cv::imread((fmt % "color" % (i + 1) % "png").str()));
         depthImgs.push_back(cv::imread((fmt % "depth" % (i + 1) % "pgm").str(), -1)); // use -1 to read the original image

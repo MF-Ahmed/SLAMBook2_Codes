@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/g2oCurveFitting.dir/g2oCurveFitting.cpp.o"
-  "CMakeFiles/g2oCurveFitting.dir/g2oCurveFitting.cpp.o.d"
   "g2oCurveFitting"
   "g2oCurveFitting.pdb"
 )
