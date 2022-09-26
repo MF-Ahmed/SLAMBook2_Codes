@@ -1,4 +1,16 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+<<<<<<< HEAD
+Change Dir: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2cc01/fast && /usr/bin/make  -f CMakeFiles/cmTC_2cc01.dir/build.make CMakeFiles/cmTC_2cc01.dir/build
+make[1]: Entering directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2cc01.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2cc01.dir/src.c.o -c /home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2cc01
+/home/uzi/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2cc01.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_2cc01.dir/src.c.o -o cmTC_2cc01 
+/usr/bin/ld: CMakeFiles/cmTC_2cc01.dir/src.c.o: in function `main':
+=======
 Change Dir: /home/user/All_Data/All_git/SLAMBook2_Codes/ch8/build/CMakeFiles/CMakeTmp
 
 Run Build Command(s):/usr/bin/make cmTC_5e917/fast && /usr/bin/make -f CMakeFiles/cmTC_5e917.dir/build.make CMakeFiles/cmTC_5e917.dir/build
@@ -9,13 +21,20 @@ Linking C executable cmTC_5e917
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e917.dir/link.txt --verbose=1
 /usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_5e917.dir/src.c.o  -o cmTC_5e917 
 /usr/bin/ld: CMakeFiles/cmTC_5e917.dir/src.c.o: in function `main':
+>>>>>>> 8f46856f20e911cc8b0606fbba99257ead1a619f
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
+<<<<<<< HEAD
+make[1]: *** [CMakeFiles/cmTC_2cc01.dir/build.make:99: cmTC_2cc01] Error 1
+make[1]: Leaving directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_2cc01/fast] Error 2
+=======
 make[1]: *** [CMakeFiles/cmTC_5e917.dir/build.make:87: cmTC_5e917] Error 1
 make[1]: Leaving directory '/home/user/All_Data/All_git/SLAMBook2_Codes/ch8/build/CMakeFiles/CMakeTmp'
 make: *** [Makefile:121: cmTC_5e917/fast] Error 2
+>>>>>>> 8f46856f20e911cc8b0606fbba99257ead1a619f
 
 
 Source file was:
@@ -39,6 +58,22 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
+<<<<<<< HEAD
+Change Dir: /home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_80bc5/fast && /usr/bin/make  -f CMakeFiles/cmTC_80bc5.dir/build.make CMakeFiles/cmTC_80bc5.dir/build
+make[1]: Entering directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80bc5.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_80bc5.dir/CheckFunctionExists.c.o -c /home/uzi/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.24/Modules/CheckFunctionExists.c
+Linking C executable cmTC_80bc5
+/home/uzi/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80bc5.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_80bc5.dir/CheckFunctionExists.c.o -o cmTC_80bc5  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_80bc5.dir/build.make:99: cmTC_80bc5] Error 1
+make[1]: Leaving directory '/home/uzi/Data/AllGit/SLAMBook2_Codes/ch8/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_80bc5/fast] Error 2
+=======
 Change Dir: /home/user/All_Data/All_git/SLAMBook2_Codes/ch8/build/CMakeFiles/CMakeTmp
 
 Run Build Command(s):/usr/bin/make cmTC_a8ba0/fast && /usr/bin/make -f CMakeFiles/cmTC_a8ba0.dir/build.make CMakeFiles/cmTC_a8ba0.dir/build
@@ -53,6 +88,7 @@ collect2: error: ld returned 1 exit status
 make[1]: *** [CMakeFiles/cmTC_a8ba0.dir/build.make:87: cmTC_a8ba0] Error 1
 make[1]: Leaving directory '/home/user/All_Data/All_git/SLAMBook2_Codes/ch8/build/CMakeFiles/CMakeTmp'
 make: *** [Makefile:121: cmTC_a8ba0/fast] Error 2
+>>>>>>> 8f46856f20e911cc8b0606fbba99257ead1a619f
 
 
 
