@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/feature_training.dir/feature_training.cpp.o"
-  "CMakeFiles/feature_training.dir/feature_training.cpp.o.d"
   "feature_training"
   "feature_training.pdb"
 )

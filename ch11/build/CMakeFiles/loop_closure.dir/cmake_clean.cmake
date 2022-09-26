@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/loop_closure.dir/loop_closure.cpp.o"
-  "CMakeFiles/loop_closure.dir/loop_closure.cpp.o.d"
   "loop_closure"
   "loop_closure.pdb"
 )

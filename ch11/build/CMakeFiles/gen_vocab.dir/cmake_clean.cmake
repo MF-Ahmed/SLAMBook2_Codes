@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gen_vocab.dir/gen_vocab_large.cpp.o"
-  "CMakeFiles/gen_vocab.dir/gen_vocab_large.cpp.o.d"
   "gen_vocab"
   "gen_vocab.pdb"
 )

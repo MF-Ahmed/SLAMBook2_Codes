@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pose_graph_g2o_lie.dir/pose_graph_g2o_lie_algebra.cpp.o"
-  "CMakeFiles/pose_graph_g2o_lie.dir/pose_graph_g2o_lie_algebra.cpp.o.d"
   "pose_graph_g2o_lie"
   "pose_graph_g2o_lie.pdb"
 )
