@@ -1,14 +1,41 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/user/data/git/SLAMBook2_Codes/ch3/examples/plotTrajectory.cpp" "/home/user/data/git/SLAMBook2_Codes/ch3/examples/build/CMakeFiles/plotTrajectory.dir/plotTrajectory.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "HAVE_EIGEN"
+  "HAVE_GLEW"
+  "HAVE_PYTHON"
+  "PANGO_DEFAULT_WIN_URI=\"wayland\""
+  "_LINUX_"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2_copy_practice/ch3/examples/plotTrajectory.cpp" "CMakeFiles/plotTrajectory.dir/plotTrajectory.o" "gcc" "CMakeFiles/plotTrajectory.dir/plotTrajectory.o.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/eigen3"
+  "/home/user/Pangolin/components/pango_core/include"
+  "/home/user/Pangolin/components/pango_display/include"
+  "/home/user/Pangolin/components/pango_opengl/include"
+  "/home/user/Pangolin/components/pango_image/include"
+  "/home/user/Pangolin/components/pango_windowing/include"
+  "/home/user/Pangolin/build/include"
+  "/home/user/Pangolin/components/pango_vars/include"
+  "/home/user/Pangolin/components/pango_geometry/include"
+  "/home/user/Pangolin/components/tinyobj/include"
+  "/home/user/Pangolin/components/pango_glgeometry/include"
+  "/home/user/Pangolin/components/pango_packetstream/include"
+  "/home/user/Pangolin/components/pango_plot/include"
+  "/home/user/Pangolin/components/pango_python/include"
+  "/home/user/Pangolin/components/pango_video/include"
+  "/home/user/Pangolin/components/pango_scene/include"
+  "/home/user/Pangolin/components/pango_tools/include"
   )
 
 # Targets to which this target links.

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2"
+CMAKE_SOURCE_DIR = /home/user/data/git/SLAMBook2_Codes/ch2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build"
+CMAKE_BINARY_DIR = /home/user/data/git/SLAMBook2_Codes/ch2/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hello.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/hello.dir/flags.make
 
 CMakeFiles/hello.dir/libHelloSLAM.cpp.o: CMakeFiles/hello.dir/flags.make
 CMakeFiles/hello.dir/libHelloSLAM.cpp.o: ../libHelloSLAM.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello.dir/libHelloSLAM.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/libHelloSLAM.cpp.o -c "/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/libHelloSLAM.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello.dir/libHelloSLAM.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/libHelloSLAM.cpp.o -c /home/user/data/git/SLAMBook2_Codes/ch2/libHelloSLAM.cpp
 
 CMakeFiles/hello.dir/libHelloSLAM.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello.dir/libHelloSLAM.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/libHelloSLAM.cpp" > CMakeFiles/hello.dir/libHelloSLAM.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/data/git/SLAMBook2_Codes/ch2/libHelloSLAM.cpp > CMakeFiles/hello.dir/libHelloSLAM.cpp.i
 
 CMakeFiles/hello.dir/libHelloSLAM.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello.dir/libHelloSLAM.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/libHelloSLAM.cpp" -o CMakeFiles/hello.dir/libHelloSLAM.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/data/git/SLAMBook2_Codes/ch2/libHelloSLAM.cpp -o CMakeFiles/hello.dir/libHelloSLAM.cpp.s
 
 # Object files for target hello
 hello_OBJECTS = \
@@ -80,7 +80,7 @@ hello_EXTERNAL_OBJECTS =
 libhello.a: CMakeFiles/hello.dir/libHelloSLAM.cpp.o
 libhello.a: CMakeFiles/hello.dir/build.make
 libhello.a: CMakeFiles/hello.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libhello.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libhello.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/hello.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello.dir/link.txt --verbose=$(VERBOSE)
 
@@ -94,6 +94,6 @@ CMakeFiles/hello.dir/clean:
 .PHONY : CMakeFiles/hello.dir/clean
 
 CMakeFiles/hello.dir/depend:
-	cd "/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2" "/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2" "/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build" "/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build" "/home/uzi/Data/SLAM Prectice Codes from book/slambook2_copy_practice/ch2/build/CMakeFiles/hello.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/user/data/git/SLAMBook2_Codes/ch2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/data/git/SLAMBook2_Codes/ch2 /home/user/data/git/SLAMBook2_Codes/ch2 /home/user/data/git/SLAMBook2_Codes/ch2/build /home/user/data/git/SLAMBook2_Codes/ch2/build /home/user/data/git/SLAMBook2_Codes/ch2/build/CMakeFiles/hello.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hello.dir/depend
 

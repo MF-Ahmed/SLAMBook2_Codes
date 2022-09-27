@@ -1,14 +1,16 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
   )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/user/data/git/SLAMBook2_Codes/ch3/examples/coordinateTransform.cpp" "/home/user/data/git/SLAMBook2_Codes/ch3/examples/build/CMakeFiles/coordinateTransform.dir/coordinateTransform.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2_copy_practice/ch3/examples/coordinateTransform.cpp" "CMakeFiles/coordinateTransform.dir/coordinateTransform.o" "gcc" "CMakeFiles/coordinateTransform.dir/coordinateTransform.o.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/eigen3"
   )
 
 # Targets to which this target links.

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/visualizeGeometry.dir/visualizeGeometry.cpp.o"
-  "CMakeFiles/visualizeGeometry.dir/visualizeGeometry.cpp.o.d"
   "visualizeGeometry"
   "visualizeGeometry.pdb"
 )

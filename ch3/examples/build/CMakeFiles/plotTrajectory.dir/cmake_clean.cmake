@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/plotTrajectory.dir/plotTrajectory.o"
-  "CMakeFiles/plotTrajectory.dir/plotTrajectory.o.d"
   "plotTrajectory"
   "plotTrajectory.pdb"
 )

@@ -1,4 +1,4 @@
-//这是一个库文件
+// this is a library file
 #include <iostream>
 using namespace std;
 

@@ -1,4 +1,4 @@
-/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2_copy_practice/ch3/examples/build/CMakeFiles/coordinateTransform.dir
-/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2_copy_practice/ch3/examples/build/CMakeFiles/plotTrajectory.dir
-/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2_copy_practice/ch3/examples/build/CMakeFiles/edit_cache.dir
-/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2_copy_practice/ch3/examples/build/CMakeFiles/rebuild_cache.dir
+/home/user/data/git/SLAMBook2_Codes/ch3/examples/build/CMakeFiles/rebuild_cache.dir
+/home/user/data/git/SLAMBook2_Codes/ch3/examples/build/CMakeFiles/edit_cache.dir
+/home/user/data/git/SLAMBook2_Codes/ch3/examples/build/CMakeFiles/plotTrajectory.dir
+/home/user/data/git/SLAMBook2_Codes/ch3/examples/build/CMakeFiles/coordinateTransform.dir

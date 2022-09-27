@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/coordinateTransform.dir/coordinateTransform.o"
-  "CMakeFiles/coordinateTransform.dir/coordinateTransform.o.d"
   "coordinateTransform"
   "coordinateTransform.pdb"
 )

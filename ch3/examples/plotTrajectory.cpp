@@ -8,7 +8,7 @@ using namespace std;
 using namespace Eigen;
 
 // path to trajectory file
- string Trajfilepath = "/home/uzi/Data/SLAM_Practice_Codes_from_book/slambook2_copy_practice/ch3/examples/trajectory.txt";
+ string Trajfilepath = "/home/user/data/git/SLAMBook2_Codes/ch3/examples/trajectory.txt";
 string trajectory_file = Trajfilepath;
 
 void DrawTrajectory(vector<Isometry3d, Eigen::aligned_allocator<Isometry3d>>);
