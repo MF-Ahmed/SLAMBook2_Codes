@@ -10,6 +10,12 @@
 using namespace std;
 
 // global variables
+
+  string basepath ="/home/user/data/git/SLAMBook2_Codes/ch7";
+  string image1path =basepath+"/1.png";
+  string image2path =basepath+"/2.png";
+
+
 string first_file = "./1.png";
 string second_file = "./2.png";
 
@@ -38,8 +44,8 @@ void BfMatch(const vector<DescType> &desc1, const vector<DescType> &desc2, vecto
 int main(int argc, char **argv) {
 
   // load image
-  cv::Mat first_image = cv::imread(first_file, 0);
-  cv::Mat second_image = cv::imread(second_file, 0);
+  cv::Mat first_image = cv::imread(image1path, 0);
+  cv::Mat second_image = cv::imread(image2path, 0);
   assert(first_image.data != nullptr && second_image.data != nullptr);
 
   // detect FAST keypoints1 using threshold=40

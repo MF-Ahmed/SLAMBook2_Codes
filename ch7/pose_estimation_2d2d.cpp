@@ -28,16 +28,22 @@ void pose_estimation_2d2d(
 Point2d pixel2cam(const Point2d &p, const Mat &K);
 
 int main(int argc, char **argv) {
+  /*
   if (argc != 3) {
     cout << "usage: pose_estimation_2d2d img1 img2" << endl;
     return 1;
   }
+  */
+
+  string basepath ="/home/user/data/git/SLAMBook2_Codes/ch7";
+  string image1path =basepath+"/1.png";
+  string image2path =basepath+"/2.png";
 
 
 
   //-- read the image
-  Mat img_1 = imread(argv[1], IMREAD_COLOR);
-  Mat img_2 = imread(argv[2], IMREAD_COLOR);
+  Mat img_1 = imread(image1path, IMREAD_COLOR);
+  Mat img_2 = imread(image2path, IMREAD_COLOR);
   assert(img_1.data && img_2.data && "Can not load images!");
 
   vector<KeyPoint> keypoints_1, keypoints_2;

@@ -10,7 +10,9 @@ using namespace std;
 typedef vector<Sophus::SE3d, Eigen::aligned_allocator<Sophus::SE3d>> TrajectoryType;
 typedef Eigen::Matrix<double, 6, 1> Vector6d;
 
-string basedir = "/home/user/All_Data/All_git/SLAMBook2_Codes/ch5/rgbd/";
+
+
+string basedir = "/home/user/data/git/SLAMBook2_Codes/ch5/rgbd/";
 
 // Drawing in pangolin, already written, no need to adjust
 void showPointCloud(

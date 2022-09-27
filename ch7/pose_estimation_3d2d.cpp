@@ -45,13 +45,28 @@ void bundleAdjustmentGaussNewton(
   Sophus::SE3d &pose
 );
 int main(int argc, char **argv) {
+  /*
   if (argc != 5) {
     cout << "usage: pose_estimation_3d2d img1 img2 depth1 depth2" << endl;
     return 1;
   }
+  */
+
+
+
+  string basepath ="/home/user/data/git/SLAMBook2_Codes/ch7";
+  string image1path =basepath+"/1.png";
+  string image2path =basepath+"/2.png";
+  string depth1path =basepath+"/1_depth.png";
+  string depth2path =basepath+"/2_depth.png";
+
+
+
+
+
   //-- read the image
-  Mat img_1 = imread(argv[1], IMREAD_COLOR);
-  Mat img_2 = imread(argv[2], IMREAD_COLOR);
+  Mat img_1 = imread(image1path, IMREAD_COLOR);
+  Mat img_2 = imread(image2path, IMREAD_COLOR);
   assert(img_1.data && img_2.data && "Can not load images!");
 
   vector<KeyPoint> keypoints_1, keypoints_2;
@@ -60,7 +75,7 @@ int main(int argc, char **argv) {
   cout << "Total found" << matches.size() << "Group matching points" << endl;
 
   // create 3D point
-  Mat d1 = imread(argv[3], IMREAD_UNCHANGED); // The depth map is a 16-bit unsigned number, a single channel image
+  Mat d1 = imread(depth1path, IMREAD_UNCHANGED); // The depth map is a 16-bit unsigned number, a single channel image
   Mat K = (Mat_<double>(3, 3) << 520.9, 0, 325.1, 0, 521.0, 249.7, 0, 0, 1);
   vector<Point3f> pts_3d;
   vector<Point2f> pts_2d;

@@ -8,7 +8,9 @@
 using namespace std;
 using namespace Eigen;
 
-string basedir = "/home/user/All_Data/All_git/SLAMBook2_Codes/ch5/stereo/";
+
+
+string basedir = "/home/user/data/git/SLAMBook2_Codes/ch5/stereo/";
 
 // file path
 string left_file = basedir+"left.png";

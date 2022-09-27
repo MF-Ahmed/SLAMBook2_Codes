@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/All_Data/All_git/SLAMBook2_Codes/ch6
+CMAKE_SOURCE_DIR = /home/user/data/git/SLAMBook2_Codes/ch6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/All_Data/All_git/SLAMBook2_Codes/ch6/build
+CMAKE_BINARY_DIR = /home/user/data/git/SLAMBook2_Codes/ch6/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -78,14 +78,14 @@ clean: CMakeFiles/gaussNewton.dir/clean
 CMakeFiles/g2oCurveFitting.dir/all:
 	$(MAKE) -f CMakeFiles/g2oCurveFitting.dir/build.make CMakeFiles/g2oCurveFitting.dir/depend
 	$(MAKE) -f CMakeFiles/g2oCurveFitting.dir/build.make CMakeFiles/g2oCurveFitting.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/All_Data/All_git/SLAMBook2_Codes/ch6/build/CMakeFiles --progress-num=3,4 "Built target g2oCurveFitting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch6/build/CMakeFiles --progress-num=3,4 "Built target g2oCurveFitting"
 .PHONY : CMakeFiles/g2oCurveFitting.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/g2oCurveFitting.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch6/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch6/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/g2oCurveFitting.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch6/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch6/build/CMakeFiles 0
 .PHONY : CMakeFiles/g2oCurveFitting.dir/rule
 
 # Convenience name for target.
@@ -105,14 +105,14 @@ CMakeFiles/g2oCurveFitting.dir/clean:
 CMakeFiles/ceresCurveFitting.dir/all:
 	$(MAKE) -f CMakeFiles/ceresCurveFitting.dir/build.make CMakeFiles/ceresCurveFitting.dir/depend
 	$(MAKE) -f CMakeFiles/ceresCurveFitting.dir/build.make CMakeFiles/ceresCurveFitting.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/All_Data/All_git/SLAMBook2_Codes/ch6/build/CMakeFiles --progress-num=1,2 "Built target ceresCurveFitting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch6/build/CMakeFiles --progress-num=1,2 "Built target ceresCurveFitting"
 .PHONY : CMakeFiles/ceresCurveFitting.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ceresCurveFitting.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch6/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch6/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ceresCurveFitting.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch6/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch6/build/CMakeFiles 0
 .PHONY : CMakeFiles/ceresCurveFitting.dir/rule
 
 # Convenience name for target.
@@ -132,14 +132,14 @@ CMakeFiles/ceresCurveFitting.dir/clean:
 CMakeFiles/gaussNewton.dir/all:
 	$(MAKE) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/depend
 	$(MAKE) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/All_Data/All_git/SLAMBook2_Codes/ch6/build/CMakeFiles --progress-num=5,6 "Built target gaussNewton"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch6/build/CMakeFiles --progress-num=5,6 "Built target gaussNewton"
 .PHONY : CMakeFiles/gaussNewton.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gaussNewton.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch6/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch6/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gaussNewton.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch6/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch6/build/CMakeFiles 0
 .PHONY : CMakeFiles/gaussNewton.dir/rule
 
 # Convenience name for target.

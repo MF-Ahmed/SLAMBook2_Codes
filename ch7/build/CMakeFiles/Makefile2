@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/All_Data/All_git/SLAMBook2_Codes/ch7
+CMAKE_SOURCE_DIR = /home/user/data/git/SLAMBook2_Codes/ch7
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build
+CMAKE_BINARY_DIR = /home/user/data/git/SLAMBook2_Codes/ch7/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -84,14 +84,14 @@ clean: CMakeFiles/orb_cv.dir/clean
 CMakeFiles/pose_estimation_3d2d.dir/all:
 	$(MAKE) -f CMakeFiles/pose_estimation_3d2d.dir/build.make CMakeFiles/pose_estimation_3d2d.dir/depend
 	$(MAKE) -f CMakeFiles/pose_estimation_3d2d.dir/build.make CMakeFiles/pose_estimation_3d2d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=7,8 "Built target pose_estimation_3d2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=7,8 "Built target pose_estimation_3d2d"
 .PHONY : CMakeFiles/pose_estimation_3d2d.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pose_estimation_3d2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pose_estimation_3d2d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
 .PHONY : CMakeFiles/pose_estimation_3d2d.dir/rule
 
 # Convenience name for target.
@@ -111,14 +111,14 @@ CMakeFiles/pose_estimation_3d2d.dir/clean:
 CMakeFiles/triangulation.dir/all:
 	$(MAKE) -f CMakeFiles/triangulation.dir/build.make CMakeFiles/triangulation.dir/depend
 	$(MAKE) -f CMakeFiles/triangulation.dir/build.make CMakeFiles/triangulation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=11,12 "Built target triangulation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=11,12 "Built target triangulation"
 .PHONY : CMakeFiles/triangulation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/triangulation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/triangulation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
 .PHONY : CMakeFiles/triangulation.dir/rule
 
 # Convenience name for target.
@@ -138,14 +138,14 @@ CMakeFiles/triangulation.dir/clean:
 CMakeFiles/pose_estimation_2d2d.dir/all:
 	$(MAKE) -f CMakeFiles/pose_estimation_2d2d.dir/build.make CMakeFiles/pose_estimation_2d2d.dir/depend
 	$(MAKE) -f CMakeFiles/pose_estimation_2d2d.dir/build.make CMakeFiles/pose_estimation_2d2d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=5,6 "Built target pose_estimation_2d2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=5,6 "Built target pose_estimation_2d2d"
 .PHONY : CMakeFiles/pose_estimation_2d2d.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pose_estimation_2d2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pose_estimation_2d2d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
 .PHONY : CMakeFiles/pose_estimation_2d2d.dir/rule
 
 # Convenience name for target.
@@ -165,14 +165,14 @@ CMakeFiles/pose_estimation_2d2d.dir/clean:
 CMakeFiles/pose_estimation_3d3d.dir/all:
 	$(MAKE) -f CMakeFiles/pose_estimation_3d3d.dir/build.make CMakeFiles/pose_estimation_3d3d.dir/depend
 	$(MAKE) -f CMakeFiles/pose_estimation_3d3d.dir/build.make CMakeFiles/pose_estimation_3d3d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=9,10 "Built target pose_estimation_3d3d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=9,10 "Built target pose_estimation_3d3d"
 .PHONY : CMakeFiles/pose_estimation_3d3d.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pose_estimation_3d3d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pose_estimation_3d3d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
 .PHONY : CMakeFiles/pose_estimation_3d3d.dir/rule
 
 # Convenience name for target.
@@ -192,14 +192,14 @@ CMakeFiles/pose_estimation_3d3d.dir/clean:
 CMakeFiles/orb_self.dir/all:
 	$(MAKE) -f CMakeFiles/orb_self.dir/build.make CMakeFiles/orb_self.dir/depend
 	$(MAKE) -f CMakeFiles/orb_self.dir/build.make CMakeFiles/orb_self.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=3,4 "Built target orb_self"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=3,4 "Built target orb_self"
 .PHONY : CMakeFiles/orb_self.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/orb_self.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/orb_self.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
 .PHONY : CMakeFiles/orb_self.dir/rule
 
 # Convenience name for target.
@@ -219,14 +219,14 @@ CMakeFiles/orb_self.dir/clean:
 CMakeFiles/orb_cv.dir/all:
 	$(MAKE) -f CMakeFiles/orb_cv.dir/build.make CMakeFiles/orb_cv.dir/depend
 	$(MAKE) -f CMakeFiles/orb_cv.dir/build.make CMakeFiles/orb_cv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=1,2 "Built target orb_cv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles --progress-num=1,2 "Built target orb_cv"
 .PHONY : CMakeFiles/orb_cv.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/orb_cv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/orb_cv.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles 0
 .PHONY : CMakeFiles/orb_cv.dir/rule
 
 # Convenience name for target.

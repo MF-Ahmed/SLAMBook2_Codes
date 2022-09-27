@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/All_Data/All_git/SLAMBook2_Codes/ch7/orb_cv.cpp" "/home/user/All_Data/All_git/SLAMBook2_Codes/ch7/build/CMakeFiles/orb_cv.dir/orb_cv.cpp.o"
+  "/home/user/data/git/SLAMBook2_Codes/ch7/orb_cv.cpp" "/home/user/data/git/SLAMBook2_Codes/ch7/build/CMakeFiles/orb_cv.dir/orb_cv.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
-  "/usr/local/include/opencv4"
+  "/usr/include/opencv4"
   )
 
 # Targets to which this target links.
