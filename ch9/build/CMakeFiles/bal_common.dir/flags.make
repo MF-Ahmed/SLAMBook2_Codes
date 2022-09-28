@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -std=c++14 -O3 -DNDEBUG
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/user/All_Data/All_git/SLAMBook2_Codes/ch9 -I/usr/include/eigen3 -I/usr/include/suitesparse 
+CXX_INCLUDES = -I/home/user/data/git/SLAMBook2_Codes/ch9 -I/usr/include/eigen3 -I/usr/include/suitesparse 
 

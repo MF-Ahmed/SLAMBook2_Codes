@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/common.cpp
+/home/user/data/git/SLAMBook2_Codes/ch9/common.cpp
 cstdio
 -
 fstream
@@ -22,21 +22,21 @@ Eigen/Core
 Eigen/Dense
 -
 common.h
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/common.h
+/home/user/data/git/SLAMBook2_Codes/ch9/common.h
 rotation.h
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/rotation.h
+/home/user/data/git/SLAMBook2_Codes/ch9/rotation.h
 random.h
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/random.h
+/home/user/data/git/SLAMBook2_Codes/ch9/random.h
 
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/common.h
+/home/user/data/git/SLAMBook2_Codes/ch9/common.h
 
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/random.h
+/home/user/data/git/SLAMBook2_Codes/ch9/random.h
 math.h
 -
 stdlib.h
 -
 
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/rotation.h
+/home/user/data/git/SLAMBook2_Codes/ch9/rotation.h
 algorithm
 -
 cmath

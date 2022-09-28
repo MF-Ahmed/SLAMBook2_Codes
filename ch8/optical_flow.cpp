@@ -11,8 +11,7 @@
 using namespace std;
 using namespace cv;
 
-string basedir = "/home/user/All_Data/All_git/SLAMBook2_Codes/ch8/";
-
+string basedir = "/home/user/data/git/SLAMBook2_Codes/ch8/";
 string file_1 = basedir+"LK1.png";  // first image
 string file_2 = basedir+"LK2.png";  // second image
 
@@ -28,7 +27,6 @@ public:
         bool inverse_ = true, bool has_initial_ = false) :
         img1(img1_), img2(img2_), kp1(kp1_), kp2(kp2_), success(success_), inverse(inverse_),
         has_initial(has_initial_) {}
-
     void calculateOpticalFlow(const Range &range);
 
 private:

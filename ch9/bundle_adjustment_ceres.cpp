@@ -7,13 +7,26 @@ using namespace std;
 
 void SolveBA(BALProblem &bal_problem);
 
+//problem-16-22106-pre
+
+
+string basedir = "/home/user/data/git/SLAMBook2_Codes/ch9/";
+string bal_file = basedir+"problem-16-22106-pre.txt";
+
+
+
+
 int main(int argc, char **argv) {
+    /*
     if (argc != 2) {
         cout << "usage: bundle_adjustment_ceres bal_data.txt" << endl;
         return 1;
     }
+    */
 
-    BALProblem bal_problem(argv[1]);
+
+
+    BALProblem bal_problem(bal_file);
     bal_problem.Normalize();
     bal_problem.Perturb(0.1, 0.5, 0.5);
     bal_problem.WriteToPLYFile("initial.ply");

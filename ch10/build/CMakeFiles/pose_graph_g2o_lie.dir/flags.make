@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++14 -O2 -O3 -DNDEBUG
 
 CXX_DEFINES = -DSOPHUS_USE_BASIC_LOGGING=1
 
-CXX_INCLUDES = -I/home/user/All_Data/All_git/SLAMBook2_Codes/ch10/Sophus::Sophus -isystem /usr/include/eigen3 
+CXX_INCLUDES = -I/home/user/data/git/SLAMBook2_Codes/ch10/Sophus::Sophus -isystem /usr/include/eigen3 
 

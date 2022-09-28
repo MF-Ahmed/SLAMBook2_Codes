@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch10/pose_graph_g2o_lie_algebra.cpp
+/home/user/data/git/SLAMBook2_Codes/ch10/pose_graph_g2o_lie_algebra.cpp
 iostream
 -
 fstream

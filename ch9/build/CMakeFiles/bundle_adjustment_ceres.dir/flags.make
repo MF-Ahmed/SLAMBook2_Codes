@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -std=c++14 -O3 -DNDEBUG   -std=gnu++17
 
 CXX_DEFINES = -DGFLAGS_IS_A_DLL=0
 
-CXX_INCLUDES = -I/home/user/All_Data/All_git/SLAMBook2_Codes/ch9 -I/usr/include/suitesparse -isystem /usr/include/eigen3 
+CXX_INCLUDES = -I/home/user/data/git/SLAMBook2_Codes/ch9 -I/usr/include/suitesparse -isystem /usr/include/eigen3 
 

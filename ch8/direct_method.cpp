@@ -14,8 +14,7 @@ double fx = 718.856, fy = 718.856, cx = 607.1928, cy = 185.2157;
 double baseline = 0.573;
 // paths
 
-
-string basedir = "/home/user/All_Data/All_git/SLAMBook2_Codes/ch8/";
+string basedir = "/home/user/data/git/SLAMBook2_Codes/ch8/";
 
 
 string left_file = basedir+"left.png";

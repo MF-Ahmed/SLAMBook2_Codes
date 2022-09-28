@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/bundle_adjustment_ceres.cpp" "/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/build/CMakeFiles/bundle_adjustment_ceres.dir/bundle_adjustment_ceres.cpp.o"
+  "/home/user/data/git/SLAMBook2_Codes/ch9/bundle_adjustment_ceres.cpp" "/home/user/data/git/SLAMBook2_Codes/ch9/build/CMakeFiles/bundle_adjustment_ceres.dir/bundle_adjustment_ceres.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,7 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/build/CMakeFiles/bal_common.dir/DependInfo.cmake"
+  "/home/user/data/git/SLAMBook2_Codes/ch9/build/CMakeFiles/bal_common.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

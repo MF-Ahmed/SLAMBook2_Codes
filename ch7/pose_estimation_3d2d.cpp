@@ -52,17 +52,11 @@ int main(int argc, char **argv) {
   }
   */
 
-
-
   string basepath ="/home/user/data/git/SLAMBook2_Codes/ch7";
   string image1path =basepath+"/1.png";
   string image2path =basepath+"/2.png";
   string depth1path =basepath+"/1_depth.png";
   string depth2path =basepath+"/2_depth.png";
-
-
-
-
 
   //-- read the image
   Mat img_1 = imread(image1path, IMREAD_COLOR);

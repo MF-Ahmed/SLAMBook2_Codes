@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/SnavelyReprojectionError.h
+/home/user/data/git/SLAMBook2_Codes/ch9/SnavelyReprojectionError.h
 iostream
 -
 ceres/ceres.h
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/ceres/ceres.h
+/home/user/data/git/SLAMBook2_Codes/ch9/ceres/ceres.h
 rotation.h
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/rotation.h
+/home/user/data/git/SLAMBook2_Codes/ch9/rotation.h
 
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/bundle_adjustment_ceres.cpp
+/home/user/data/git/SLAMBook2_Codes/ch9/bundle_adjustment_ceres.cpp
 iostream
 -
 ceres/ceres.h
 -
 common.h
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/common.h
+/home/user/data/git/SLAMBook2_Codes/ch9/common.h
 SnavelyReprojectionError.h
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/SnavelyReprojectionError.h
+/home/user/data/git/SLAMBook2_Codes/ch9/SnavelyReprojectionError.h
 
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/common.h
+/home/user/data/git/SLAMBook2_Codes/ch9/common.h
 
-/home/user/All_Data/All_git/SLAMBook2_Codes/ch9/rotation.h
+/home/user/data/git/SLAMBook2_Codes/ch9/rotation.h
 algorithm
 -
 cmath
