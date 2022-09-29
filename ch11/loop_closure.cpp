@@ -9,9 +9,9 @@
 using namespace cv;
 using namespace std;
 
-/***************************************************
- * 本节演示了如何根据前面训练的字典计算相似性评分
- * ************************************************/
+/**************************************************** **
+  * This section demonstrates how to calculate the similarity score based on the previously trained dictionary
+  *****************************************************/
 int main(int argc, char **argv) {
     // read the images and database  
     cout << "reading database" << endl;
