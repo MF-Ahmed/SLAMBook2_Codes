@@ -9,9 +9,9 @@
 using namespace cv;
 using namespace std;
 
-/***************************************************
- * 本节演示了如何根据data/目录下的十张图训练字典
- * ************************************************/
+/**************************************************** **
+  * This section demonstrates how to train a dictionary from ten images in the data/ directory
+  *****************************************************/
 
 int main( int argc, char** argv ) {
     // read the image 
