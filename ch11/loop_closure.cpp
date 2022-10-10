@@ -15,7 +15,8 @@ using namespace std;
 int main(int argc, char **argv) {
     // read the images and database  
     cout << "reading database" << endl;
-    DBoW3::Vocabulary vocab("./vocabulary.yml.gz");
+    string abs_path = "/home/user/data/git/SLAMBook2_Codes/ch11/";
+    DBoW3::Vocabulary vocab(abs_path+"myvocabulary.yml.gz");
     // DBoW3::Vocabulary vocab("./vocab_larger.yml.gz");  // use large vocab if you want: 
     if (vocab.empty()) {
         cerr << "Vocabulary does not exist." << endl;
@@ -24,7 +25,7 @@ int main(int argc, char **argv) {
     cout << "reading images... " << endl;
     vector<Mat> images;
     for (int i = 0; i < 10; i++) {
-        string path = "./data/" + to_string(i + 1) + ".png";
+        string path = abs_path+"data/" + to_string(i + 1) + ".png";
         images.push_back(imread(path));
     }
 

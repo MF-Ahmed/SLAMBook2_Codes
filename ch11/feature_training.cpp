@@ -17,9 +17,10 @@ int main( int argc, char** argv ) {
     // read the image 
     cout<<"reading images... "<<endl;
     vector<Mat> images; 
+    string abs_path = "/home/user/data/git/SLAMBook2_Codes/ch11";
     for ( int i=0; i<10; i++ )
     {
-        string path = "./data/"+to_string(i+1)+".png";
+        string path =  abs_path+"/data/"+to_string(i+1)+".png";
         images.push_back( imread(path) );
     }
     // detect ORB features
@@ -35,12 +36,12 @@ int main( int argc, char** argv ) {
     }
     
     // create vocabulary 
-    cout<<"creating vocabulary ... "<<endl;
+    //cout<<"\n\r creating vocabulary ... "<<endl;
     DBoW3::Vocabulary vocab;
     vocab.create( descriptors );
-    cout<<"vocabulary info: "<<vocab<<endl;
-    vocab.save( "vocabulary.yml.gz" );
-    cout<<"done"<<endl;
+    //cout<<"\n\r vocabulary info: "<<vocab<<endl;
+    vocab.save( abs_path+"/myvocabulary.yml.gz" );
+    cout<<"done!"<<endl;
     
     return 0;
 }
