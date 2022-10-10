@@ -14,19 +14,19 @@ using namespace std;
 #include <pcl/filters/statistical_outlier_removal.h>
 
 int main(int argc, char **argv) {
-    vector<cv::Mat> colorImgs, depthImgs;    // 彩色图和深度图
-    vector<Eigen::Isometry3d> poses;         // 相机位姿
+    vector<cv::Mat> colorImgs, depthImgs; // color map and depth map
+    vector<Eigen::Isometry3d> poses; // camera poses
 
-    ifstream fin("./data/pose.txt");
+    ifstream fin("/home/user/data/git/SLAMBook2_Codes/ch12/dense_RGBD/data/pose.txt");
     if (!fin) {
         cerr << "cannot find pose file" << endl;
         return 1;
     }
 
     for (int i = 0; i < 5; i++) {
-        boost::format fmt("./data/%s/%d.%s"); //图像文件格式
+        boost::format fmt("/home/user/data/git/SLAMBook2_Codes/ch12/dense_RGBD/data/%s/%d.%s"); //image file format
         colorImgs.push_back(cv::imread((fmt % "color" % (i + 1) % "png").str()));
-        depthImgs.push_back(cv::imread((fmt % "depth" % (i + 1) % "png").str(), -1)); // 使用-1读取原始图像
+        depthImgs.push_back(cv::imread((fmt % "depth" % (i + 1) % "png").str(), -1)); // use -1 to read the original image
 
         double data[7] = {0};
         for (int i = 0; i < 7; i++) {
@@ -38,32 +38,32 @@ int main(int argc, char **argv) {
         poses.push_back(T);
     }
 
-    // 计算点云并拼接
-    // 相机内参 
+    // Calculate point cloud and stitch
+    // camera internal parameters
     double cx = 319.5;
     double cy = 239.5;
     double fx = 481.2;
     double fy = -480.0;
     double depthScale = 5000.0;
 
-    cout << "正在将图像转换为点云..." << endl;
+    cout << "Converting image to point cloud..." << endl;
 
-    // 定义点云使用的格式：这里用的是XYZRGB
+    // Define the format used by the point cloud: XYZRGB is used here
     typedef pcl::PointXYZRGB PointT;
     typedef pcl::PointCloud<PointT> PointCloud;
 
-    // 新建一个点云
+    // create a new point cloud
     PointCloud::Ptr pointCloud(new PointCloud);
     for (int i = 0; i < 5; i++) {
         PointCloud::Ptr current(new PointCloud);
-        cout << "转换图像中: " << i + 1 << endl;
+        cout << "Converted image: " << i + 1 << endl;
         cv::Mat color = colorImgs[i];
         cv::Mat depth = depthImgs[i];
         Eigen::Isometry3d T = poses[i];
         for (int v = 0; v < color.rows; v++)
             for (int u = 0; u < color.cols; u++) {
-                unsigned int d = depth.ptr<unsigned short>(v)[u]; // 深度值
-                if (d == 0) continue; // 为0表示没有测量到
+                unsigned int d = depth.ptr<unsigned short>(v)[u]; // depth value
+                if (d == 0) continue; // 0 means no measurement
                 Eigen::Vector3d point;
                 point[2] = double(d) / depthScale;
                 point[0] = (u - cx) * point[2] / fx;
@@ -79,7 +79,7 @@ int main(int argc, char **argv) {
                 p.r = color.data[v * color.step + u * color.channels() + 2];
                 current->points.push_back(p);
             }
-        // depth filter and statistical removal 
+        // depth filter and statistical removal
         PointCloud::Ptr tmp(new PointCloud);
         pcl::StatisticalOutlierRemoval<PointT> statistical_filter;
         statistical_filter.setMeanK(50);
@@ -90,19 +90,19 @@ int main(int argc, char **argv) {
     }
 
     pointCloud->is_dense = false;
-    cout << "点云共有" << pointCloud->size() << "个点." << endl;
+    cout << "point cloud total : " << pointCloud->size() << " points." << endl;
 
-    // voxel filter 
+    // voxel filter
     pcl::VoxelGrid<PointT> voxel_filter;
     double resolution = 0.03;
-    voxel_filter.setLeafSize(resolution, resolution, resolution);       // resolution
+    voxel_filter.setLeafSize(resolution, resolution, resolution); // resolution
     PointCloud::Ptr tmp(new PointCloud);
     voxel_filter.setInputCloud(pointCloud);
     voxel_filter.filter(*tmp);
     tmp->swap(*pointCloud);
 
-    cout << "滤波之后，点云共有" << pointCloud->size() << "个点." << endl;
+    cout << "After filtering, the point cloud has a total of : " << pointCloud->size() << " points." << endl;
 
-    pcl::io::savePCDFileBinary("map.pcd", *pointCloud);
+    pcl::io::savePCDFileBinary("/home/user/data/git/SLAMBook2_Codes/ch12/dense_RGBD/data/map.pcd", *pointCloud);
     return 0;
 }
