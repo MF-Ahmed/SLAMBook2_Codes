@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example
+CMAKE_SOURCE_DIR = /home/user/data/git/SLAMBook2_Codes/ch4/example
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example/build
+CMAKE_BINARY_DIR = /home/user/data/git/SLAMBook2_Codes/ch4/example/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/trajectoryError.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/trajectoryError.dir/flags.make
 
 CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o: CMakeFiles/trajectoryError.dir/flags.make
 CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o: ../trajectoryError.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o -c /home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example/trajectoryError.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch4/example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o -c /home/user/data/git/SLAMBook2_Codes/ch4/example/trajectoryError.cpp
 
 CMakeFiles/trajectoryError.dir/trajectoryError.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trajectoryError.dir/trajectoryError.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example/trajectoryError.cpp > CMakeFiles/trajectoryError.dir/trajectoryError.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/data/git/SLAMBook2_Codes/ch4/example/trajectoryError.cpp > CMakeFiles/trajectoryError.dir/trajectoryError.cpp.i
 
 CMakeFiles/trajectoryError.dir/trajectoryError.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trajectoryError.dir/trajectoryError.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example/trajectoryError.cpp -o CMakeFiles/trajectoryError.dir/trajectoryError.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/data/git/SLAMBook2_Codes/ch4/example/trajectoryError.cpp -o CMakeFiles/trajectoryError.dir/trajectoryError.cpp.s
 
 # Object files for target trajectoryError
 trajectoryError_OBJECTS = \
@@ -79,28 +79,28 @@ trajectoryError_EXTERNAL_OBJECTS =
 
 trajectoryError: CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o
 trajectoryError: CMakeFiles/trajectoryError.dir/build.make
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_glgeometry.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_python.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_scene.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_tools.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_video.so
+trajectoryError: /home/user/Pangolin/build/libpango_glgeometry.so
+trajectoryError: /home/user/Pangolin/build/libpango_python.so
+trajectoryError: /home/user/Pangolin/build/libpango_scene.so
+trajectoryError: /home/user/Pangolin/build/libpango_tools.so
+trajectoryError: /home/user/Pangolin/build/libpango_video.so
 trajectoryError: /usr/lib/x86_64-linux-gnu/libfmt.a
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_geometry.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libtinyobj.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_plot.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_display.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_vars.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_windowing.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_opengl.so
+trajectoryError: /home/user/Pangolin/build/libpango_geometry.so
+trajectoryError: /home/user/Pangolin/build/libtinyobj.so
+trajectoryError: /home/user/Pangolin/build/libpango_plot.so
+trajectoryError: /home/user/Pangolin/build/libpango_display.so
+trajectoryError: /home/user/Pangolin/build/libpango_vars.so
+trajectoryError: /home/user/Pangolin/build/libpango_windowing.so
+trajectoryError: /home/user/Pangolin/build/libpango_opengl.so
 trajectoryError: /usr/lib/x86_64-linux-gnu/libGLEW.so
 trajectoryError: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 trajectoryError: /usr/lib/x86_64-linux-gnu/libGLX.so
 trajectoryError: /usr/lib/x86_64-linux-gnu/libGLU.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_image.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_packetstream.so
-trajectoryError: /home/user/Downloads/Pangolin/build/libpango_core.so
+trajectoryError: /home/user/Pangolin/build/libpango_image.so
+trajectoryError: /home/user/Pangolin/build/libpango_packetstream.so
+trajectoryError: /home/user/Pangolin/build/libpango_core.so
 trajectoryError: CMakeFiles/trajectoryError.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable trajectoryError"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch4/example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable trajectoryError"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/trajectoryError.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -113,6 +113,6 @@ CMakeFiles/trajectoryError.dir/clean:
 .PHONY : CMakeFiles/trajectoryError.dir/clean
 
 CMakeFiles/trajectoryError.dir/depend:
-	cd /home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example /home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example /home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example/build /home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example/build /home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example/build/CMakeFiles/trajectoryError.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/data/git/SLAMBook2_Codes/ch4/example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/data/git/SLAMBook2_Codes/ch4/example /home/user/data/git/SLAMBook2_Codes/ch4/example /home/user/data/git/SLAMBook2_Codes/ch4/example/build /home/user/data/git/SLAMBook2_Codes/ch4/example/build /home/user/data/git/SLAMBook2_Codes/ch4/example/build/CMakeFiles/trajectoryError.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/trajectoryError.dir/depend
 

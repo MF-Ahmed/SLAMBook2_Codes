@@ -10,7 +10,7 @@
 using namespace Sophus;
 using namespace std;
 
-string basedir = "/home/user/All_Data/All_git/SLAMBook2_Codes/ch4/example";
+string basedir = "/home/user/data/git/SLAMBook2_Codes/ch4/example";
 
 string p1 = basedir+"/groundtruth.txt";
 string p2 = basedir+"/estimated.txt";

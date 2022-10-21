@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/useSophus.dir/useSophus.cpp.o"
-  "CMakeFiles/useSophus.dir/useSophus.cpp.o.d"
   "useSophus"
   "useSophus.pdb"
 )
