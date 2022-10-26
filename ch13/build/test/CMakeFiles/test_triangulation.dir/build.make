@@ -82,6 +82,7 @@ test_triangulation_EXTERNAL_OBJECTS =
 ../bin/test_triangulation: /usr/lib/x86_64-linux-gnu/libgtest.a
 ../bin/test_triangulation: /usr/lib/x86_64-linux-gnu/libgtest_main.a
 ../bin/test_triangulation: /usr/local/lib/libglog.so
+../bin/test_triangulation: /usr/local/lib/libgflags.a
 ../bin/test_triangulation: /usr/lib/x86_64-linux-gnu/libcxsparse.so
 ../bin/test_triangulation: ../lib/libmyslam.so
 ../bin/test_triangulation: /usr/local/lib/libopencv_gapi.so.4.6.0
@@ -163,7 +164,7 @@ test_triangulation_EXTERNAL_OBJECTS =
 ../bin/test_triangulation: /usr/lib/x86_64-linux-gnu/libgtest.a
 ../bin/test_triangulation: /usr/lib/x86_64-linux-gnu/libgtest_main.a
 ../bin/test_triangulation: /usr/local/lib/libglog.so
-../bin/test_triangulation: /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2
+../bin/test_triangulation: /usr/local/lib/libgflags.a
 ../bin/test_triangulation: /usr/lib/x86_64-linux-gnu/libcxsparse.so
 ../bin/test_triangulation: test/CMakeFiles/test_triangulation.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/data/git/SLAMBook2_Codes/ch13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/test_triangulation"

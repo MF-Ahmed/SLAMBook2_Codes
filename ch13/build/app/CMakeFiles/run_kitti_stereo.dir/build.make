@@ -125,7 +125,7 @@ run_kitti_stereo_EXTERNAL_OBJECTS =
 ../bin/run_kitti_stereo: /usr/lib/x86_64-linux-gnu/libgtest.a
 ../bin/run_kitti_stereo: /usr/lib/x86_64-linux-gnu/libgtest_main.a
 ../bin/run_kitti_stereo: /usr/local/lib/libglog.so
-../bin/run_kitti_stereo: /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2
+../bin/run_kitti_stereo: /usr/local/lib/libgflags.a
 ../bin/run_kitti_stereo: /usr/lib/x86_64-linux-gnu/libcxsparse.so
 ../bin/run_kitti_stereo: /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0
 ../bin/run_kitti_stereo: /usr/local/lib/libopencv_optflow.so.4.6.0

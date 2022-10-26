@@ -7,21 +7,22 @@ using namespace std;
 #include <opencv2/highgui/highgui.hpp>
 
 #include <octomap/octomap.h>    // for octomap 
-
 #include <Eigen/Geometry>
 #include <boost/format.hpp>  // for formating strings
 int main(int argc, char **argv) {
     vector<cv::Mat> colorImgs, depthImgs; // color map and depth map
     vector<Eigen::Isometry3d> poses; // camera poses
 
-    ifstream fin("./data/pose.txt");
+    string abs_path = "/home/user/data/git/SLAMBook2_Codes/ch12/dense_RGBD/data";
+
+    ifstream fin(abs_path+"/pose.txt");
     if (!fin) {
         cerr << "cannot find pose file" << endl;
         return 1;
     }
 
     for (int i = 0; i < 5; i++) {
-        boost::format fmt("./data/%s/%d.%s"); //image file format
+        boost::format fmt(abs_path+"/%s/%d.%s"); //image file format
         colorImgs.push_back(cv::imread((fmt % "color" % (i + 1) % "png").str()));
         depthImgs.push_back(cv::imread((fmt % "depth" % (i + 1) % "png").str(), -1)); // use -1 to read the original image
 
@@ -76,6 +77,6 @@ int main(int argc, char **argv) {
     // Update the occupancy information of the intermediate node and write it to disk
     tree.updateInnerOccupancy();
     cout << "saving octomap ... " << endl;
-    tree.writeBinary("octomap.bt");
+    tree.writeBinary("octomapnew.bt");
     return 0;
 }

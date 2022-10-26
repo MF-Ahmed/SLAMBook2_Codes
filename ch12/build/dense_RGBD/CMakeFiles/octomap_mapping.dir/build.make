@@ -143,8 +143,8 @@ dense_RGBD/octomap_mapping: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.s
 dense_RGBD/octomap_mapping: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
 dense_RGBD/octomap_mapping: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
 dense_RGBD/octomap_mapping: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
-dense_RGBD/octomap_mapping: /usr/lib/x86_64-linux-gnu/liboctomap.so
-dense_RGBD/octomap_mapping: /usr/lib/x86_64-linux-gnu/liboctomath.so
+dense_RGBD/octomap_mapping: /opt/ros/noetic/lib/liboctomap.so
+dense_RGBD/octomap_mapping: /opt/ros/noetic/lib/liboctomath.so
 dense_RGBD/octomap_mapping: /usr/local/lib/libopencv_shape.so.4.6.0
 dense_RGBD/octomap_mapping: /usr/local/lib/libopencv_highgui.so.4.6.0
 dense_RGBD/octomap_mapping: /usr/local/lib/libopencv_datasets.so.4.6.0

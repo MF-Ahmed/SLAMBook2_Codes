@@ -274,7 +274,7 @@ myslam_EXTERNAL_OBJECTS =
 ../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libgtest.a
 ../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libgtest_main.a
 ../lib/libmyslam.so: /usr/local/lib/libglog.so
-../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2
+../lib/libmyslam.so: /usr/local/lib/libgflags.a
 ../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libcxsparse.so
 ../lib/libmyslam.so: /usr/local/lib/libopencv_shape.so.4.6.0
 ../lib/libmyslam.so: /usr/local/lib/libopencv_highgui.so.4.6.0
