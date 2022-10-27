@@ -3,7 +3,7 @@
 # the tum dataset directory, change it to yours! 
 # dataset_dir: /media/xiang/Data/Dataset/Kitti/dataset/sequences/00
 #dataset_dir: /mnt/1A9286BD92869CBF/Dataset/Kitti/dataset/sequences/05
-dataset_dir: /home/user/data/Datasets/Kitty/data_odometry_gray/dataset/sequences/05
+dataset_dir: /media/user/Fun_Backup/AllDatasets/Kitty/data_odometry_gray/dataset/sequences/05
 
 
 # camera intrinsics
