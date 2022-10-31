@@ -11,9 +11,9 @@ struct Frame;
 struct Feature;
 
 /**
- * 路标点类
- * 特征点在三角化之后形成路标点
- */
+  * Waypoints
+  * Feature points form landmark points after triangulation
+  */
 struct MapPoint {
    public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
