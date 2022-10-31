@@ -942,6 +942,26 @@ myslam/map.h
 myslam/mappoint.h
 /home/user/data/git/SLAMBook2_Codes/ch13/src/myslam/mappoint.h
 
+/home/user/data/git/SLAMBook2_Codes/ch13/src/dataset.cpp
+myslam/dataset.h
+/home/user/data/git/SLAMBook2_Codes/ch13/src/myslam/dataset.h
+myslam/frame.h
+/home/user/data/git/SLAMBook2_Codes/ch13/src/myslam/frame.h
+boost/format.hpp
+-
+fstream
+-
+opencv2/opencv.hpp
+-
+
+/home/user/data/git/SLAMBook2_Codes/ch13/src/feature.cpp
+myslam/feature.h
+/home/user/data/git/SLAMBook2_Codes/ch13/src/myslam/feature.h
+
+/home/user/data/git/SLAMBook2_Codes/ch13/src/frame.cpp
+myslam/frame.h
+/home/user/data/git/SLAMBook2_Codes/ch13/src/myslam/frame.h
+
 /home/user/data/git/SLAMBook2_Codes/ch13/src/frontend.cpp
 opencv2/opencv.hpp
 -
@@ -965,6 +985,12 @@ myslam/viewer.h
 /home/user/data/git/SLAMBook2_Codes/ch13/src/map.cpp
 myslam/map.h
 /home/user/data/git/SLAMBook2_Codes/ch13/src/myslam/map.h
+myslam/feature.h
+/home/user/data/git/SLAMBook2_Codes/ch13/src/myslam/feature.h
+
+/home/user/data/git/SLAMBook2_Codes/ch13/src/mappoint.cpp
+myslam/mappoint.h
+/home/user/data/git/SLAMBook2_Codes/ch13/src/myslam/mappoint.h
 myslam/feature.h
 /home/user/data/git/SLAMBook2_Codes/ch13/src/myslam/feature.h
 

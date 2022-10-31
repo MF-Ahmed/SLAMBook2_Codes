@@ -13,38 +13,38 @@ namespace myslam {
 class Map;
 
 /**
- * 后端
- * 有单独优化线程，在Map更新时启动优化
- * Map更新由前端触发
- */ 
+ * rear end
+ * There is a separate optimization thread, which starts the optimization when the Map is updated
+ * Map updates are triggered by the frontend
+ */
 class Backend {
    public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
     typedef std::shared_ptr<Backend> Ptr;
 
-    /// 构造函数中启动优化线程并挂起
+    /// Start the optimization thread in the constructor and suspend
     Backend();
 
-    // 设置左右目的相机，用于获得内外参
+    // Set the left and right camera to get the internal and external parameters
     void SetCameras(Camera::Ptr left, Camera::Ptr right) {
         cam_left_ = left;
         cam_right_ = right;
     }
 
-    /// 设置地图
+    /// Set up the map
     void SetMap(std::shared_ptr<Map> map) { map_ = map; }
 
-    /// 触发地图更新，启动优化
+    /// Trigger map update, start optimization
     void UpdateMap();
 
-    /// 关闭后端线程
+    /// Close the backend thread
     void Stop();
 
    private:
-    /// 后端线程
+    /// backend thread
     void BackendLoop();
 
-    /// 对给定关键帧和路标点进行优化
+    /// Optimize for given keyframes and waypoints
     void Optimize(Map::KeyframesType& keyframes, Map::LandmarksType& landmarks);
 
     std::shared_ptr<Map> map_;
@@ -57,6 +57,6 @@ class Backend {
     Camera::Ptr cam_left_ = nullptr, cam_right_ = nullptr;
 };
 
-}  // namespace myslam
+} // namespace myslam
 
-#endif  // MYSLAM_BACKEND_H
+#endif // MYSLAM_BACKEND_H

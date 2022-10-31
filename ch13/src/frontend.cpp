@@ -16,8 +16,7 @@
 namespace myslam {
 
 Frontend::Frontend() {
-    gftt_ =
-        cv::GFTTDetector::create(Config::Get<int>("num_features"), 0.01, 20);
+    gftt_ = cv::GFTTDetector::create(Config::Get<int>("num_features"), 0.01, 20);
     num_features_init_ = Config::Get<int>("num_features_init");
     num_features_ = Config::Get<int>("num_features");
 }
@@ -109,7 +108,8 @@ int Frontend::TriangulateNewPoints() {
     for (size_t i = 0; i < current_frame_->features_left_.size(); ++i) {
         if (current_frame_->features_left_[i]->map_point_.expired() &&
             current_frame_->features_right_[i] != nullptr) {
-            // 左图的特征点未关联地图点且存在右图匹配点，尝试三角化
+            // The feature points of the left image are not associated with
+            // map points and there are matching points in the right image, try triangulation
             std::vector<Vec3> points{
                 camera_left_->pixel2camera(
                     Vec2(current_frame_->features_left_[i]->position_.pt.x,

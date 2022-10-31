@@ -12,7 +12,7 @@ namespace myslam {
 struct MapPoint;
 struct Feature;
 /**
- * frame
+ * Frame
  * Each frame is assigned an independent id, and key frames are assigned key frame IDs
  */
 struct Frame {

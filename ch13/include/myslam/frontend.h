@@ -14,11 +14,10 @@ class Backend;
 class Viewer;
 
 enum class FrontendStatus { INITING, TRACKING_GOOD, TRACKING_BAD, LOST };
-
 /**
- * 前端
- * 估计当前帧Pose，在满足关键帧条件时向地图加入关键帧并触发优化
- */
+  * front end
+  * Estimate the current frame Pose, add keyframes to the map and trigger optimization when the keyframe conditions are met
+  */
 class Frontend {
    public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
@@ -26,10 +25,10 @@ class Frontend {
 
     Frontend();
 
-    /// 外部接口，添加一个帧并计算其定位结果
+   /// External interface, add a frame and calculate its positioning result
     bool AddFrame(Frame::Ptr frame);
 
-    /// Set函数
+    /// Set function
     void SetMap(Map::Ptr map) { map_ = map; }
 
     void SetBackend(std::shared_ptr<Backend> backend) { backend_ = backend; }
@@ -113,16 +112,17 @@ class Frontend {
     // data
     FrontendStatus status_ = FrontendStatus::INITING;
 
-    Frame::Ptr current_frame_ = nullptr;  // 当前帧
-    Frame::Ptr last_frame_ = nullptr;     // 上一帧
-    Camera::Ptr camera_left_ = nullptr;   // 左侧相机
-    Camera::Ptr camera_right_ = nullptr;  // 右侧相机
+    Frame::Ptr current_frame_ = nullptr; // current frame
+    Frame::Ptr last_frame_ = nullptr; // previous frame
+    Camera::Ptr camera_left_ = nullptr; // left camera
+    Camera::Ptr camera_right_ = nullptr; // right camera
 
     Map::Ptr map_ = nullptr;
     std::shared_ptr<Backend> backend_ = nullptr;
     std::shared_ptr<Viewer> viewer_ = nullptr;
 
-    SE3 relative_motion_;  // 当前帧与上一帧的相对运动，用于估计当前帧pose初值
+    SE3 relative_motion_;  // The relative motion of the current frame and the previous frame 
+                           // is used to estimate the initial value of the pose of the current frame
 
     int tracking_inliers_ = 0;  // inliers, used for testing new keyframes
 
