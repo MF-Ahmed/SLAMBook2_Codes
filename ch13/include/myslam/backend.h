@@ -13,7 +13,7 @@ namespace myslam {
 class Map;
 
 /**
- * rear end
+ * backend
  * There is a separate optimization thread, which starts the optimization when the Map is updated
  * Map updates are triggered by the frontend
  */
@@ -52,7 +52,7 @@ class Backend {
     std::mutex data_mutex_;
 
     std::condition_variable map_update_;
-    std::atomic<bool> backend_running_;
+    std::atomic<bool> backend_running_; // 
 
     Camera::Ptr cam_left_ = nullptr, cam_right_ = nullptr;
 };

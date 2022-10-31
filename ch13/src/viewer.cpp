@@ -8,6 +8,7 @@
 #include <pangolin/pangolin.h>
 #include <opencv2/opencv.hpp>
 
+
 namespace myslam {
 
 Viewer::Viewer() {
@@ -33,12 +34,13 @@ void Viewer::UpdateMap() {
 }
 
 void Viewer::ThreadLoop() {
-    pangolin::CreateWindowAndBind("MySLAM", 1024, 768);
-    glEnable(GL_DEPTH_TEST);
-    glEnable(GL_BLEND);
+    pangolin::CreateWindowAndBind("MySLAM_edited", 1024, 768);
+    glEnable(GL_DEPTH_TEST);  // 3D Mouse handler requires depth testing to be enabled
+    glEnable(GL_BLEND);       // Issue specific OpenGl we might need
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     pangolin::OpenGlRenderState vis_camera(
+          // Define Camera Render Object (for view / scene browsing)
         pangolin::ProjectionMatrix(1024, 768, 400, 400, 512, 384, 0.1, 1000),
         pangolin::ModelViewLookAt(0, -5, -10, 0, 0, 0, 0.0, -1.0, 0.0));
 
@@ -155,7 +157,7 @@ void Viewer::DrawMapPoints() {
     for (auto& landmark : active_landmarks_) {
         auto pos = landmark.second->Pos();
         glColor3f(red[0], red[1], red[2]);
-        glVertex3d(pos[0], pos[1], pos[2]);
+        glVertex3f(pos[0], pos[1], pos[2]);
     }
     glEnd();
 }

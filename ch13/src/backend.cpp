@@ -43,13 +43,11 @@ void Backend::Optimize(Map::KeyframesType &keyframes,
                        Map::LandmarksType &landmarks) {
     // setup g2o
     typedef g2o::BlockSolver_6_3 BlockSolverType;
-    typedef g2o::LinearSolverCSparse<BlockSolverType::PoseMatrixType>
-        LinearSolverType;
-    auto solver = new g2o::OptimizationAlgorithmLevenberg(
-        g2o::make_unique<BlockSolverType>(
-            g2o::make_unique<LinearSolverType>()));
+    typedef g2o::LinearSolverCSparse<BlockSolverType::PoseMatrixType>LinearSolverType;
+    auto solver = new g2o::OptimizationAlgorithmLevenberg(g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
     g2o::SparseOptimizer optimizer;
     optimizer.setAlgorithm(solver);
+
 
     // pose vertex, use Keyframe id
     std::map<unsigned long, VertexPose *> vertices;
@@ -77,7 +75,7 @@ void Backend::Optimize(Map::KeyframesType &keyframes,
 
     // edges
     int index = 1;
-    double chi2_th = 5.991;  // robust kernel threshold
+    double chi2_th = 5.99;  // robust kernel threshold set to 5.99
     std::map<EdgeProjection *, Feature::Ptr> edges_and_features;
 
     for (auto &landmark : landmarks) {
@@ -88,7 +86,6 @@ void Backend::Optimize(Map::KeyframesType &keyframes,
             if (obs.lock() == nullptr) continue;
             auto feat = obs.lock();
             if (feat->is_outlier_ || feat->frame_.lock() == nullptr) continue;
-
             auto frame = feat->frame_.lock();
             EdgeProjection *edge = nullptr;
             if (feat->is_on_left_image_) {
@@ -112,10 +109,10 @@ void Backend::Optimize(Map::KeyframesType &keyframes,
             edge->setVertex(0, vertices.at(frame->keyframe_id_));    // pose
             edge->setVertex(1, vertices_landmarks.at(landmark_id));  // landmark
             edge->setMeasurement(toVec2(feat->position_.pt));
-            edge->setInformation(Mat22::Identity());
-            auto rk = new g2o::RobustKernelHuber();
-            rk->setDelta(chi2_th);
-            edge->setRobustKernel(rk);
+            edge->setInformation(Mat22::Identity());                // Information matrix set to identity, as we assume robot poses are independent
+            auto robust_kernel = new g2o::RobustKernelHuber();                 // Huber robust kernel is used 
+            robust_kernel->setDelta(chi2_th);
+            edge->setRobustKernel(robust_kernel);
             edges_and_features.insert({edge, feat});
 
             optimizer.addEdge(edge);
@@ -163,7 +160,7 @@ void Backend::Optimize(Map::KeyframesType &keyframes,
     LOG(INFO) << "Outlier/Inlier in optimization: " << cnt_outlier << "/"
               << cnt_inlier;
 
-    // Set pose and lanrmark position
+    // Set pose and landrmark position
     for (auto &v : vertices) {
         keyframes.at(v.first)->SetPose(v.second->estimate());
     }

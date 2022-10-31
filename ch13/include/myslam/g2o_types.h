@@ -21,7 +21,7 @@
 
 namespace myslam {
 /// vertex and edges used in g2o ba
-/// 位姿顶点
+/// pose vertex AKA node in graph
 class VertexPose : public g2o::BaseVertex<6, SE3> {
    public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
