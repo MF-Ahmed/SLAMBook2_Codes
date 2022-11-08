@@ -6,10 +6,7 @@ using namespace std;
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-
 string basedir = "/home/user/data/git/SLAMBook2_Codes/ch5/imageBasics/";
-
-
 
 string image_path {basedir+"ubuntu.png"};
 int main(int argc, char **argv) {
