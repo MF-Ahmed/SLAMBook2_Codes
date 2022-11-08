@@ -37,7 +37,8 @@ int main(int argc, char **argv) {
 
   // Traverse the image, please note that the following traversal methods can also be used for random pixel access
   // use std::chrono to time the algorithm
-  chrono::steady_clock::time_point t1 = chrono::steady_clock::now();
+  std::chrono::steady_clock::time_point t0 = std::chrono::steady_clock::now();
+  
   for (size_t y = 0; y < image.rows; y++) {
     // Get the row pointer of the image with cv::Mat::ptr
     unsigned char *row_ptr = image.ptr<unsigned char>(y); // row_ptr is the head pointer of row y
@@ -50,9 +51,9 @@ int main(int argc, char **argv) {
       }
     }
   }
-  chrono::steady_clock::time_point t2 = chrono::steady_clock::now();
-  chrono::duration<double> time_used = chrono::duration_cast < chrono::duration < double >> (t2 - t1);
-  cout << "Time to traverse the image:" << time_used.count() << "Seconds." << endl;
+  chrono::steady_clock::time_point t1 = chrono::steady_clock::now();
+  chrono::duration<double> time_used = chrono::duration_cast < chrono::duration < double >> (t1 - t0);
+  cout << "Time to traverse the image: " << time_used.count() << " Secs." << endl;
 
   // Copy about cv::Mat
   // Direct assignment does not copy the data
