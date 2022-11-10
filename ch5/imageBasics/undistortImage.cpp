@@ -1,10 +1,8 @@
 #include <opencv2/opencv.hpp>
 #include <string>
 
+
 using namespace std;
-
-
-
 string basedir = "/home/user/data/git/SLAMBook2_Codes/ch5/imageBasics/";
 
 string image_file = basedir+"distorted.png"; // make sure the path is correct
@@ -25,7 +23,7 @@ int main(int argc, char **argv) {
   for (int v = 0; v < rows; v++) {
     for (int u = 0; u < cols; u++) {
       // According to the formula, the calculated point (u, v) corresponds to the coordinates in the distorted image (u_distorted, v_distorted)
-      double x = (u - cx) / fx, y = (v - cy) / fy;
+      double x = (u - cx) / fx, y = (v - cy) / fy;   // 
       double r = sqrt(x * x + y * y);
       double x_distorted = x * (1 + k1 * r * r + k2 * r * r * r * r) + 2 * p1 * x * y + p2 * (r * r + 2 * x * x);
       double y_distorted = y * (1 + k1 * r * r + k2 * r * r * r * r) + p1 * (r * r + 2 * y * y) + 2 * p2 * x * y;
@@ -44,7 +42,7 @@ int main(int argc, char **argv) {
   // draw the image after distortion //
 
   cv::imshow("distorted", image);
-  cv::imshow("undistorted", image_undistort);
+  cv::imshow("undistorted rectified", image_undistort);
   cv::waitKey();
   return 0;
 }
