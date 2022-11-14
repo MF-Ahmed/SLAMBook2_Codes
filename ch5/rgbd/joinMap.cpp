@@ -5,6 +5,16 @@
 #include <pangolin/pangolin.h>
 #include <sophus/se3.hpp>
 
+/*
+    We have prepared 5 pairs of images located in the slambook2/ch5/rgbd folder.
+    There are 5 RGB images from 1.png to 5.png under the color/ directory and 5
+    corresponding depth images under the depth/. At the same time, the “pose.txt” file
+    gives the camera poses of the 5 images (in the form of T_wc ). The format of the pose
+
+    (1) We calculate the point cloud corresponding to each pair of RGB-D images based on internal parameters;
+    (2) According to the camera pose of each image, we put the points to a global cloud by the camera poses.
+*/
+
 
 using namespace std;
 typedef vector<Sophus::SE3d, Eigen::aligned_allocator<Sophus::SE3d>> TrajectoryType;
@@ -17,8 +27,6 @@ string basedir = "/home/user/data/git/SLAMBook2_Codes/ch5/rgbd/";
 // Drawing in pangolin, already written, no need to adjust
 void showPointCloud(
     const vector<Vector6d, Eigen::aligned_allocator<Vector6d>> &pointcloud);
-
-
 
 int main(int argc, char **argv) {
     vector<cv::Mat> colorImgs, depthImgs; // color map and depth map
