@@ -72,6 +72,5 @@ int main(int argc, char **argv) {
   cout << "estimated a,b,c = ";
   for (auto a:abc) cout << a << " ";
   cout << endl;
-
   return 0;
 }
