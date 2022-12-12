@@ -42,6 +42,7 @@ int main(int argc, char **argv) {
 
   double abc[3] = {ae, be, ce};
 
+
   // Construct the least squares problem
   ceres::Problem problem;
   for (int i = 0; i < N; i++) {

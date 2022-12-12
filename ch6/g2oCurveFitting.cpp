@@ -109,6 +109,7 @@ int main(int argc, char **argv) {
     optimizer.addEdge(edge);
   }
 
+
   // perform optimization
   cout << "start optimization" << endl;
   chrono::steady_clock::time_point t1 = chrono::steady_clock::now();
