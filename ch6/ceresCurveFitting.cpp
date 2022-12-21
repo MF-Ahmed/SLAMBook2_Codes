@@ -15,6 +15,7 @@ struct CURVE_FITTING_COST {
 
   // calculation of residuals
   template<typename T>
+  // we define a functor which will be used later by the solver 
   bool operator()(
     const T *const abc, // model parameter, has 3 dimensions
     T *residual) const {
