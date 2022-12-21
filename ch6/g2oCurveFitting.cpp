@@ -79,10 +79,11 @@ int main(int argc, char **argv) {
   for (int i = 0; i < N; i++) {
     double x = i / 100.0;
     x_data.push_back(x);
-    y_data.push_back(exp(ar * x * x + br * x + cr) + rng.gaussian(w_sigma * w_sigma));
+    y_data.push_back(exp(ar * x * x + br * x + cr) + rng.gaussian(w_sigma * w_sigma));// y- exp(ax^2+bx+c)
   }
 
   // Build graph optimization, first set g2o
+  
   typedef g2o::BlockSolver<g2o::BlockSolverTraits<3, 1>> BlockSolverType; // The dimension of each error term optimization variable is 3, and the dimension of error value is 1
   typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType> LinearSolverType; // Linear solver type
 
