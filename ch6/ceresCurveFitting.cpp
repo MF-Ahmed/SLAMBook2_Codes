@@ -41,7 +41,7 @@ int main(int argc, char **argv) {
     y_data.push_back(exp(ar * x * x + br * x + cr) + rng.gaussian(w_sigma * w_sigma));
   }
 
-  double abc[3] = {ae, be, ce};
+  double abc[3] = {ae, be, ce}; // initial guess
 
 
   // Construct the least squares problem
