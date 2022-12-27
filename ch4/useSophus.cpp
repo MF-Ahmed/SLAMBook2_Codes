@@ -7,7 +7,7 @@
 using namespace std;
 using namespace Eigen;
 
-/// 本程序演示sophus的基本用法
+/// This program demonstrates the basic usage of sophus
 
 int main(int argc, char **argv) {
 
