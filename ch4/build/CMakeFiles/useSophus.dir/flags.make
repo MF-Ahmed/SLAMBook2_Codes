@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS =  
 
-CXX_DEFINES = -DSOPHUS_USE_BASIC_LOGGING=1
+CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /usr/include/eigen3 
+CXX_INCLUDES = -isystem /usr/include/eigen3 -isystem /opt/ros/noetic/include 
 

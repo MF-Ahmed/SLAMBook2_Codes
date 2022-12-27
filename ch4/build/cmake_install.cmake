@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/data/git/SLAMBook2_Codes/ch4
+# Install script for directory: /home/usr/data/git/SLAMBook2_Codes/ch4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/user/data/git/SLAMBook2_Codes/ch4/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/usr/data/git/SLAMBook2_Codes/ch4/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

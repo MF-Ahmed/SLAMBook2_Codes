@@ -4,18 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/data/git/SLAMBook2_Codes/ch4/useSophus.cpp" "/home/user/data/git/SLAMBook2_Codes/ch4/build/CMakeFiles/useSophus.dir/useSophus.cpp.o"
+  "/home/usr/data/git/SLAMBook2_Codes/ch4/useSophus.cpp" "/home/usr/data/git/SLAMBook2_Codes/ch4/build/CMakeFiles/useSophus.dir/useSophus.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "SOPHUS_USE_BASIC_LOGGING=1"
-  )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
+  "/opt/ros/noetic/include"
   )
 
 # Targets to which this target links.
